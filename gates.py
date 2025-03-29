@@ -16,6 +16,7 @@ def Tele4(ccx):
     yy = yy.split("20")[1]
   with open('fileb3.txt', 'r') as file:
     first_line = file.readline()
+    last_used_times = {}
   while True:
     lines = '''nejwjjw%7C1727061642%7CQhgPigXOtGtMm5jc8Dc0YzfR9EFcN7ACHdnxdpFg73B%7C4ee2f46b011bcfefe08f1cefc579bd0a1995fb67d5df494613acd5d33bc51a2d
 gdjejiwiwjek%7C1743341127%7C1YjsGvn6ciJHeUwulQk7ITMqX9s4GMbiBZDOOe6IIuf%7Cf532b67016b00fa640a5037cc5864f8a9f06fbaecda90a6c66825a856e8e12b6
@@ -25,6 +26,11 @@ tweuuei3828%7C1743433060%7CHQn3CTSkQBVrzU4l5kSVVSksLFm7wFEAAtXHEBWeYNN%7Cc45469d
     lines = lines.strip().split('\n')
     random_line_number = random.randint(0, len(lines) - 1)
     big = lines[random_line_number]
+    current_time = time.time()
+    if big in last_used_times:
+    	time_since_last_use = current_time - last_used_times[big]
+    	if time_since_last_use < 30:
+    		continue    
     if big == first_line:
       pass
     else:
