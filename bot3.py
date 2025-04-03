@@ -18,7 +18,7 @@ import time
 from telebot import types
 
 stopuser = {}
-token = "7337962051:AAElJbLkN--rLiYloOX53uM6fpePh0jmszM"
+token = "7040333422:AAHj2FMUnTxw3ODx2phoxz1-1QSBXGADf5I"
 bot=telebot.TeleBot(token,parse_mode="HTML")
 
 
@@ -72,20 +72,20 @@ def start(message):
 			keyboard = types.InlineKeyboardMarkup()
 			contact_button = types.InlineKeyboardButton(text="ϟ Programmer - cheetax1", url="https://t.me/cheetax1")
 			keyboard.add(contact_button)
-			random_number = random.randint(4, 17)
-			photo_url = f'https://t.me/animephotossea/{random_number}'
+			random_number = random.randint(4, 33359)
+			photo_url = f'https://t.me/r_indianmemes/{random_number}'
 			bot.send_photo(chat_id=message.chat.id, photo=photo_url, caption=f'''<b>ϟ Welcome Dear -> {name} ϟ
-ϟ Youre Not Subscribed in Check World Bot ❌
-
+ϟ You need to purchase bot subscription   ❌
+ϟ Type /cmds To see all Commands 
 ϟ For Show Bot Prices Send -> /prices
-ϟ Programmer ~ @cheetax1 </b>''',reply_markup=keyboard)
+ϟ Developer ~ @cheetax1 </b>''',reply_markup=keyboard)
 			return
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="ϟ Our Channel ϟ", url="https://t.me/vetranchat")
 		keyboard.add(contact_button)
 		username = message.from_user.first_name
-		random_number = random.randint(4, 17)
-		photo_url = f'https://t.me/animephotossea/{random_number}'
+		random_number = random.randint(4, 33359)
+		photo_url = f'https://t.me/r_indianmemes/{random_number}'
 		bot.send_photo(chat_id=message.chat.id, photo=photo_url, caption=f'''<strong>ϟ Welcome -> {name} ϟ
 - Your Subscription is Active ✅
 
@@ -109,7 +109,7 @@ def start(message):
 	keyboard.add(contact_button)
 	bot.send_message(chat_id=message.chat.id, text='''<b> 
 ━━━━━━━━━━━━━━━━━━━
-[ϟ] Name: Braintree Auth (Avs)
+[ϟ] Name: Shopify 1.99$ ⭐
 [ϟ] Format: /chk card|month|year|cvv
 [ϟ] Condition: ON! ✅
 [ϟ] Type: Only-Vip-User
@@ -119,19 +119,19 @@ def start(message):
 [ϟ] Condition: ON! ✅
 [ϟ] Type: Only-Vip-User
 ━━━━━━━━━━━━━━━━━━━
-[ϟ] Name: Braintree Auth 3
+[ϟ] Name: shopify 11.86$ ✨
 [ϟ] Format: /b3 card|month|year|cvv
 [ϟ] Condition: ON! ✅
 [ϟ] Type: Only-Vip-User
 ━━━━━━━━━━━━━━━━━━━
-[ϟ] Name: Braintree Auth 4
+[ϟ] Name: Braintree Auth 4 💫
 [ϟ] Format: /sa card|month|year|cvv
 [ϟ] Condition: ON! ✅
 [ϟ] Type: Only-Vip-User
 ━━━━━━━━━━━━━━━━━━━
 [ϟ] Name: Braintree Charge 0.50$
 [ϟ] Format: /ba card|month|year|cvv
-[ϟ] Condition: ON! ✅
+[ϟ] Condition: OFF! ❌
 [ϟ] Type: Only-Vip-User
 ━━━━━━━━━━━━━━━━━━━
 [ϟ] Name: BIN Info Lookup
@@ -204,17 +204,17 @@ def main(message):
 				json.dump(json_data, file, indent=2)
 			return
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text=f"ϟ Braintree Auth (Avs) ϟ",callback_data='br')
-		sw = types.InlineKeyboardButton(text=f"ϟ Shopify 10 🌟 ϟ️",callback_data='br2')
-		b3 = types.InlineKeyboardButton(text=f"ϟ Braintree Auth 3 ϟ️",callback_data='br3')
-		sa = types.InlineKeyboardButton(text=f"ϟ Braintree Auth 4 ϟ️",callback_data='br4')
-		m = types.InlineKeyboardButton(text=f"ϟ - ϟ️",callback_data='br4')
+		contact_button = types.InlineKeyboardButton(text=f"ϟ Shopify 1.99$ ⭐ ϟ",callback_data='br')
+		sw = types.InlineKeyboardButton(text=f"ϟ Shopify 10$ 🌟 ϟ️",callback_data='br2')
+		b3 = types.InlineKeyboardButton(text=f"ϟ shopify 11.86$ ✨ ϟ️",callback_data='br3')
+		sa = types.InlineKeyboardButton(text=f"ϟ Braintree Auth (Avs) ϟ️",callback_data='br4')
+		ba = types.InlineKeyboardButton(text=f"ϟ Braintree Auth (Non-Avs)ϟ️",callback_data='ch1')
 		d = types.InlineKeyboardButton(text=f"ϟ - ϟ️",callback_data='br4')
 		keyboard.add(contact_button)
 		keyboard.add(sw)
 		keyboard.add(b3)
 		keyboard.add(sa)
-		keyboard.add(m)
+		keyboard.add(ba)
 		keyboard.add(d)
 		bot.reply_to(message, text=f'ϟ Chose The Gateway You Want to use from Bellow ',reply_markup=keyboard)
 		ee = bot.download_file(bot.get_file(message.document.file_id).file_path)
@@ -288,7 +288,7 @@ def enable_br1(message):
     global check_enabled_br1
     if str(message.from_user.id) in admins:
         check_enabled_br1 = True
-        bot.send_message(chat_id=message.chat.id, text='- Braintree Auth (Avs) has been enabled. ✅')
+        bot.send_message(chat_id=message.chat.id, text='- Shopify 1.99$ ⭐ has been enabled. ✅')
     else:
         bot.send_message(chat_id=message.chat.id, text='- You are not the owner🤍')
 
@@ -297,7 +297,7 @@ def disable_br1(message):
     global check_enabled_br1
     if str(message.from_user.id) in admins:
         check_enabled_br1 = False
-        bot.send_message(chat_id=message.chat.id, text='- Braintree Auth (Avs) has been disabled. 🔒')
+        bot.send_message(chat_id=message.chat.id, text='- Shopify 1.99$ ⭐ has been disabled. 🔒')
     else:
         bot.send_message(chat_id=message.chat.id, text='- You are not the owner🤍')
 
@@ -335,7 +335,7 @@ def enable_br3(message):
     global check_enabled_br3
     if str(message.from_user.id) in admins:
         check_enabled_br3 = True
-        bot.send_message(chat_id=message.chat.id, text='- Braintree Auth 3 Check has been enabled. ✅')
+        bot.send_message(chat_id=message.chat.id, text='- shopify 11.86$ ✨ Check has been enabled. ✅')
     else:
         bot.send_message(chat_id=message.chat.id, text='- You are not the owner🤍')
 
@@ -344,7 +344,7 @@ def disable_br3(message):
     global check_enabled_br3
     if str(message.from_user.id) in admins:
         check_enabled_br3 = False
-        bot.send_message(chat_id=message.chat.id, text='- Braintree Auth 3 Check has been disabled. 🔒')
+        bot.send_message(chat_id=message.chat.id, text='- shopify 11.86$ ✨ Check has been disabled. 🔒')
     else:
         bot.send_message(chat_id=message.chat.id, text='- You are not the owner🤍')
         
@@ -421,9 +421,9 @@ def show_menu(message):
         toggle_br4 = 'Enable✅' if check_enabled_br4 else 'Disable❌'
         toggle_ch1 = 'Enable✅' if check_enabled_ch1 else 'Disable❌'
         
-        br1_button = types.InlineKeyboardButton(f"Braintree Auth (Avs) ({toggle_br1})", callback_data='toggle_br1')
+        br1_button = types.InlineKeyboardButton(f"Shopify 1.99$ ⭐ ({toggle_br1})", callback_data='toggle_br1')
         br2_button = types.InlineKeyboardButton(f"Shopify 10$ 🌟 ({toggle_br2})", callback_data='toggle_br2')
-        br3_button = types.InlineKeyboardButton(f"Braintree Auth 3 ({toggle_br3})", callback_data='toggle_br3')
+        br3_button = types.InlineKeyboardButton(f"shopify 11.86$ ✨ ({toggle_br3})", callback_data='toggle_br3')
         br4_button = types.InlineKeyboardButton(f"Braintree Auth 4 ({toggle_br4})", callback_data='toggle_br4')
         ch1_button = types.InlineKeyboardButton(f"Braintree Charge 1 ({toggle_ch1})", callback_data='toggle_ch1')
         limits_button = types.InlineKeyboardButton(f"Gate limits ({MAX_LINES})", callback_data='set_limits')
@@ -442,7 +442,7 @@ def handle_toggle(call):
     if call.data == 'toggle_br1':
         check_enabled_br1 = not check_enabled_br1
         status = 'Enable✅' if check_enabled_br1 else 'Disable❌'
-        bot.answer_callback_query(call.id, f"Braintree Auth (Avs) is now {status}.")
+        bot.answer_callback_query(call.id, f"Shopify 1.99$ ⭐ is now {status}.")
     elif call.data == 'toggle_br2':
         check_enabled_br2 = not check_enabled_br2
         status = 'Enable✅' if check_enabled_br2 else 'Disable❌'
@@ -450,7 +450,7 @@ def handle_toggle(call):
     elif call.data == 'toggle_br3':
         check_enabled_br3 = not check_enabled_br3
         status = 'Enable✅' if check_enabled_br3 else 'Disable❌'
-        bot.answer_callback_query(call.id, f"Braintree Auth 3 is now {status}.")
+        bot.answer_callback_query(call.id, f"shopify 11.86$ ✨ is now {status}.")
     elif call.data == 'toggle_br4':
         check_enabled_br4 = not check_enabled_br4
         status = 'Enable✅' if check_enabled_br4 else 'Disable❌'
@@ -465,9 +465,9 @@ def handle_toggle(call):
 
     # تحديث الرسالة لعرض الحالة الجديدة
     markup = types.InlineKeyboardMarkup(row_width=1)
-    br1_button = types.InlineKeyboardButton(f"Braintree Auth (Avs) ({'Enable✅' if check_enabled_br1 else 'Disable❌'})", callback_data='toggle_br1')
+    br1_button = types.InlineKeyboardButton(f"Shopify 1.99$ ⭐ ({'Enable✅' if check_enabled_br1 else 'Disable❌'})", callback_data='toggle_br1')
     br2_button = types.InlineKeyboardButton(f"Shopify 10$ 🌟 ({'Enable✅' if check_enabled_br2 else 'Disable❌'})", callback_data='toggle_br2')
-    br3_button = types.InlineKeyboardButton(f"Braintree Auth 3 ({'Enable✅' if check_enabled_br3 else 'Disable❌'})", callback_data='toggle_br3')
+    br3_button = types.InlineKeyboardButton(f"shopify 11.86 ✨ ({'Enable✅' if check_enabled_br3 else 'Disable❌'})", callback_data='toggle_br3')
     br4_button = types.InlineKeyboardButton(f"Braintree Auth 4 ({'Enable✅' if check_enabled_br4 else 'Disable❌'})", callback_data='toggle_br4')
     ch1_button = types.InlineKeyboardButton(f"Braintree Charge 1 ({'Enable✅' if check_enabled_ch1 else 'Disable❌'})", callback_data='toggle_ch1')
     limits_button = types.InlineKeyboardButton(f"Gate limits ({MAX_LINES})", callback_data='set_limits')
@@ -546,7 +546,7 @@ def menu_callback(call):
         return  # إذا كان هناك فحص جاري، نخرج من الدالة ولا نبدأ فحص جديد
 
     def my_function():
-        gate = 'Braintree Auth (Avs)'
+        gate = 'Shopify 1.99$ ⭐'
         dd = 0
         live = 0
         cm = 0
@@ -614,7 +614,7 @@ def menu_callback(call):
 - Programmer -> @cheetax1 </b>''', 
                         reply_markup=mes)
 
-                    msg = f'''<b>• Approved ✅
+                    msg = f'''<b>• Charged 1.99$  ✅
 
 ϟ Card ->  <code>{cc}</code>
 ϟ Status -> {last}
@@ -625,7 +625,7 @@ def menu_callback(call):
 ϟ Time -> {"{:.1f}".format(execution_time)} Seconds. 
 ϟ - Programmer -> @cheetax1⚡</b>'''
 
-                    if "Funds" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last or 'CVV' in last:
+                    if "charged" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last or 'CVV' in last:
                         live += 1
                         bot.send_message(call.from_user.id, msg)
                     else:
@@ -782,7 +782,7 @@ def menu_callback(call):
 - Programmer -> @cheetax1 </b>''', 
                         reply_markup=mes)
 
-                    msg = f'''<b>• Approved ✅
+                    msg = f'''<b>• Charged 10$ ✅
 
 ϟ Card ->  <code>{cc}</code>
 ϟ Status -> {last}
@@ -793,7 +793,7 @@ def menu_callback(call):
 ϟ Time -> {"{:.1f}".format(execution_time)} Seconds. 
 ϟ - Programmer -> @cheetax1⚡</b>'''
 
-                    if "Charged" in last or 'success' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last or 'CVV' in last:
+                    if "charged" in last or 'success' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last or 'CVV' in last:
                         live += 1
                         bot.send_message(call.from_user.id, msg)
                     else:
@@ -869,7 +869,7 @@ def handle_admin_commands(message):
     global check_enabled_br3
     if str(message.from_user.id) in admins:
         check_enabled_br3 = False
-        bot.send_message(chat_id=message.chat.id, text='- Braintree Auth 3 Check has been disabled. 🔒 No users can start the check until it is re-enabled.')
+        bot.send_message(chat_id=message.chat.id, text='- shopify 11.86$ ✨ Check has been disabled. 🔒 No users can start the check until it is re-enabled.')
     else:
         bot.send_message(chat_id=message.chat.id, text='- You are not the owner🤍')
 
@@ -878,7 +878,7 @@ def handle_admin_commands(message):
     global check_enabled_br3
     if str(message.from_user.id) in admins:
         check_enabled_br3 = True
-        bot.send_message(chat_id=message.chat.id, text='- Braintree Auth 3 Check has been re-enabled. ✅ Users can now start the check.')
+        bot.send_message(chat_id=message.chat.id, text='- shopify 11.86$ ✨ Check has been re-enabled. ✅ Users can now start the check.')
     else:
         bot.send_message(chat_id=message.chat.id, text='- You are not the owner🤍')
 
@@ -899,7 +899,7 @@ def menu_callback(call):
         return  # إذا كان هناك فحص جاري، نخرج من الدالة ولا نبدأ فحص جديد
 
     def my_function():
-        gate = 'Braintree Auth 3'
+        gate = 'shopify 11.86 ✨'
         dd = 0
         live = 0
         cm = 0
@@ -967,7 +967,7 @@ def menu_callback(call):
 - Programmer -> @cheetax1 </b>''', 
                         reply_markup=mes)
 
-                    msg = f'''<b>• Approved ✅
+                    msg = f'''<b>• Charged 11.86$ ✅
 
 ϟ Card ->  <code>{cc}</code>
 ϟ Status -> {last}
@@ -978,7 +978,7 @@ def menu_callback(call):
 ϟ Time -> {"{:.1f}".format(execution_time)} Seconds. 
 ϟ - Programmer -> @cheetax1⚡</b>'''
 
-                    if "Funds" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last or 'CVV' in last:
+                    if "charged" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last or 'CVV' in last:
                         live += 1
                         bot.send_message(call.from_user.id, msg)
                     else:
@@ -1168,9 +1168,168 @@ def stop_check(call):
         bot.send_message(chat_id=call.message.chat.id, text='- Stopping Check...')
     else:
         bot.send_message(chat_id=call.message.chat.id, text='- No ongoing check to stop.')
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 
+import threading
+import time
+from telebot import types
 
+MAX_LINES = 1000
+stopuser = {}  # لتعقب حالة كل مستخدم
+check_enabled_ch1 = True  # لتتبع ما إذا كان فحص Braintree Auth 4 مفعلًا أم لا
+
+@bot.message_handler(commands=['offch1'])
+def handle_admin_commands(message):
+    global check_enabled_ch1
+    if str(message.from_user.id) in admins:
+        check_enabled_ch1 = False
+        bot.send_message(chat_id=message.chat.id, text='- Braintree Auth 4 Check has been disabled. 🔒 No users can start the check until it is re-enabled.')
+    else:
+        bot.send_message(chat_id=message.chat.id, text='- You are not the owner🤍')
+
+@bot.message_handler(commands=['onch1'])
+def handle_admin_commands(message):
+    global check_enabled_ch1
+    if str(message.from_user.id) in admins:
+        check_enabled_ch1 = True
+        bot.send_message(chat_id=message.chat.id, text='- Braintree Auth 4 Check has been re-enabled. ✅ Users can now start the check.')
+    else:
+        bot.send_message(chat_id=message.chat.id, text='- You are not the owner🤍')
+
+@bot.callback_query_handler(func=lambda call: call.data == 'ch1')
+def menu_callbactok(call):
+    id = str(call.from_user.id)
+
+    if not check_enabled_ch1:
+        bot.send_message(chat_id=call.message.chat.id, text="- Gateway is under maintenance ❌.")
+        return
+
+    # تحقق مما إذا كان المستخدم لديه فحص جاري
+    if id in stopuser and stopuser[id]['status'] == 'start':
+        bot.send_message(
+            chat_id=call.message.chat.id,
+            text="- You Are Already Checking A Combo. 🔄 Please Wait Until It Finishes Or Stop It Manually."
+        )
+        return  # إذا كان هناك فحص جاري، نخرج من الدالة ولا نبدأ فحص جديد
+
+    def my_function():
+        gate = 'Braintree 4'
+        dd = 0
+        live = 0
+        cm = 0
+        mes = types.InlineKeyboardMarkup(row_width=1)
+        cm1 = types.InlineKeyboardButton("- [ CARD ]", callback_data='u8')
+        status = types.InlineKeyboardButton(f"- Status & Message ", callback_data='u8')
+        cm3 = types.InlineKeyboardButton("- Approved ✅-> Number ", callback_data='x')
+        ccn = types.InlineKeyboardButton("- CVV & CCN✅-> Number ", callback_data='x')
+        cm4 = types.InlineKeyboardButton("- Declined ❌-> Number ", callback_data='x')
+        cm5 = types.InlineKeyboardButton("- Total ⚡-> Number ", callback_data='x')
+        stop = types.InlineKeyboardButton("- For Stop Check 🔍", callback_data='stop')
+        mes.add(cm1, status, cm3, ccn, cm4, cm5, stop)
+        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="- Please Wait Processing Your File ..", reply_markup=mes)
+        
+        try:
+            with open("combo.txt", 'r') as file:
+                lines = file.readlines()
+                total_lines = len(lines)
+                
+                # تحقق من عدد الأسطر
+                if total_lines > MAX_LINES:
+                    bot.send_message(
+                        chat_id=call.message.chat.id,
+                        text=(
+                            f"- 𝐁𝐀𝐃 𝐁𝐑𝐎 ❌\n\n"
+                            f"• 𝐓𝐇𝐄 𝐌𝐀𝐗 𝐂𝐂 𝐋𝐈𝐌𝐈𝐓 𝐈𝐒 {MAX_LINES} ✅\n\n"
+                            "• 𝐂𝐇𝐄𝐂𝐊 𝐘𝐎𝐔𝐑 𝐅𝐈𝐋𝐄 𝐀𝐍𝐃 𝐓𝐑𝐘 𝐀𝐆𝐀𝐈𝐍 📣"
+                        )
+                    )
+                    stopuser[id]['status'] = 'stopped'  # تحرير حالة الفحص
+                    return
+                
+                stopuser[id] = {'status': 'start'}
+                
+                for cc in lines:
+                    if stopuser[id]['status'] == 'stop':
+                        bot.send_message(chat_id=id, text='- Done Stop Check Cards 📣⚡')
+                        stopuser[id]['status'] = 'stopped'  # تحرير حالة الفحص
+                        return
+                    start_time = time.time()
+                    try:
+                        last = str(notauto(cc))
+                        cm += 1
+                    except Exception as e:
+                        print(e)
+                        last = "RISK: gateway_error"
+                    
+                    print(last)
+                    mes = types.InlineKeyboardMarkup(row_width=1)
+                    cm1 = types.InlineKeyboardButton(f"- 𝘾𝘾 • {cc}", callback_data='u8')
+                    status = types.InlineKeyboardButton(f"- 𝙎𝙩𝙖𝙩𝙪𝙨 • {last}", callback_data='u8')
+                    cm3 = types.InlineKeyboardButton(f"- 𝗔𝗣𝗣𝗥𝗢𝗩𝗘𝗗 !✅ • {live}", callback_data='x')
+                    cm4 = types.InlineKeyboardButton(f"- 𝗗𝗘𝗖𝗜𝗡𝗘𝗗 !❌ • {dd}", callback_data='x')
+                    cm5 = types.InlineKeyboardButton(f"• {total_lines} / {cm} •", callback_data='x')
+                    stop = types.InlineKeyboardButton("- Stop Check 🚷", callback_data='stop')
+                    mes.add(cm1, status, cm3, cm4, cm5, stop)
+                    
+                    end_time = time.time()
+                    execution_time = end_time - start_time
+                    bot.edit_message_text(chat_id=call.message.chat.id, 
+                        message_id=call.message.message_id, 
+                        text=f'''
+<b>- Please Wait Checking Your Cards 💫
+- Gate -> {gate} 💫
+- Programmer -> @cheetax1 </b>''', 
+                        reply_markup=mes)
+                    
+                    msg = f'''<b>• Approved ✅
+
+ϟ Card ->  <code>{cc}</code>
+ϟ Status -> {last}
+ϟ Gate -> {gate}
+
+{str(dato(cc[:6]))}
+
+ϟ Time -> {"{:.1f}".format(execution_time)} Seconds. 
+ϟ - Programmer -> @cheetax1⚡</b>'''
+                    
+                    if "Funds" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last or 'CVV' in last:
+                        live += 1
+                        bot.send_message(call.from_user.id, msg)
+                    else:
+                        dd += 1
+                    
+                    time.sleep(5)
+        except Exception as error:
+            bot.send_message(admins[0], f'Error -> {error}')
+        
+        stopuser[id]['status'] = 'stopped'  # تحرير حالة الفحص بعد الانتهاء
+        bot.send_message(chat_id=call.message.chat.id, text='- Done Check All Cards ✅\n - Programmer • @cheetax1')
+
+    my_thread = threading.Thread(target=my_function)
+    my_thread.start()
+
+@bot.callback_query_handler(func=lambda call: call.data == 'stop')
+def stop_check(call):
+    id = str(call.from_user.id)
+    if id in stopuser and stopuser[id]['status'] == 'start':
+        stopuser[id]['status'] = 'stop'
+        bot.send_message(chat_id=call.message.chat.id, text='- Stopping Check...')
+    else:
+        bot.send_message(chat_id=call.message.chat.id, text='- No ongoing check to stop.')
 	
 
 
@@ -1284,7 +1443,7 @@ def respond_to_vhk(message):
 
     if check_user_plan(user_id):
         cc = message.text.replace('.chk ', '').replace('/chk ', '')
-        gate='Braintree Auth (Avs)'
+        gate='Shopify 1.99$ ⭐'
         ko = bot.reply_to(message, '- Please Wait Checking your Card...⌛').message_id
         start_time = time.time()
         try:
@@ -1298,18 +1457,18 @@ def respond_to_vhk(message):
 
 ϟ Card ->  <code>{cc}</code>
 ϟ Status -> {last}
-ϟ Gate ->  Braintree Auth (Avs)
+ϟ Gate ->  Shopify 1.99$ ⭐
 
 {str(dato(cc[:6]))}
 
 ϟ Time -> {"{:.1f}".format(execution_time)} Seconds. 
 ϟ - Programmer -> @cheetax1⚡</b>'''
 
-        ok = f'''<b>• Approved ✅
+        ok = f'''<b>• charged ✅
 
 ϟ Card ->  <code>{cc}</code>
 ϟ Status -> {last}
-ϟ Gate -> Braintree Auth (Avs)
+ϟ Gate -> Shopify 1.99$ ⭐
 
 {str(dato(cc[:6]))}
 
@@ -1329,13 +1488,13 @@ def respond_to_vhk(message):
 
         if 'CVV' in last or 'CCN' in last:
             bot.edit_message_text(text=cvc, chat_id=message.chat.id, message_id=ko)
-        elif "Funds" in last or 'Invalid postal' in last or 'Charge 0.50$ ✅' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last:
+        elif "charged" in last or 'Invalid postal' in last or 'Charge 0.50$ ✅' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last:
             bot.edit_message_text(text=ok, chat_id=message.chat.id, message_id=ko)
         else:
             bot.edit_message_text(text=dec, chat_id=message.chat.id, message_id=ko)
     else:
         bot.reply_to(message, f'''- Welcome Dear ♡!
-You are Not Subscribed cheetax1Chk BOT !❌
+You are Not Subscribed cheetax1 Chk BOT !❌
 
 Your ID : {message.chat.id}
 Programmer - @cheetax1''')
@@ -1432,7 +1591,7 @@ def respond_to_vhk(message):
 ϟ Time -> {"{:.1f}".format(execution_time)} Seconds. 
 ϟ - Programmer -> @cheetax1⚡</b>'''
 
-        ok = f'''<b>• Approved ✅
+        ok = f'''<b>• charged ✅
 
 ϟ Card ->  <code>{cc}</code>
 ϟ Status -> {last}
@@ -1456,7 +1615,7 @@ def respond_to_vhk(message):
 
         if 'CVV' in last or 'CCN' in last:
             bot.edit_message_text(text=cvc, chat_id=message.chat.id, message_id=ko)
-        elif "Funds" in last or 'Invalid postal' in last or 'Charge 0.50$ ✅' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last:
+        elif "Funds" in last or 'Invalid postal' in last or 'charged' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last:
             bot.edit_message_text(text=ok, chat_id=message.chat.id, message_id=ko)
         else:
             bot.edit_message_text(text=dec, chat_id=message.chat.id, message_id=ko)
@@ -1529,7 +1688,7 @@ def respond_to_vhk(message):
 
     if check_user_plan(user_id):
         cc = message.text.replace('.b3 ', '').replace('/b3 ', '')
-        gate='Braintree Auth 3'
+        gate='shopify 11.86$ ✨'
         ko = bot.reply_to(message, '- Please Wait Checking your Card...⌛').message_id
         start_time = time.time()
         try:
@@ -1543,18 +1702,18 @@ def respond_to_vhk(message):
 
 ϟ Card ->  <code>{cc}</code>
 ϟ Status -> {last}
-ϟ Gate ->  Braintree Auth 3
+ϟ Gate ->  shopify 11.86$ ✨
 
 {str(dato(cc[:6]))}
 
 ϟ Time -> {"{:.1f}".format(execution_time)} Seconds. 
 ϟ - Programmer -> @cheetax1⚡</b>'''
 
-        ok = f'''<b>• Approved ✅
+        ok = f'''<b>• charged ✅
 
 ϟ Card ->  <code>{cc}</code>
 ϟ Status -> {last}
-ϟ Gate -> Braintree Auth 3
+ϟ Gate -> shopify 11.86$ ✨
 
 {str(dato(cc[:6]))}
 
@@ -2286,12 +2445,16 @@ def adodre(message):
 @bot.message_handler(func=lambda message: message.text.lower().startswith('.prices') or message.text.lower().startswith('/prices'))
 def respondn_to_vhk(message):
  bot.reply_to(message,'''ا
- Bot Pro CC Checker Bot 🛒
- 
- NOT FOR SELL 
-• • We Accept All Payment Methods in World ✅
-• For Subscribe & inquiry - 🛩
-🖱👼@cheetax1👼''')
+💫 Welcome to @cheetax1 Bot 💫
+⭐ Pricing:
+🌟 1 Day – $1  
+🌟 5 Days – $4  
+
+💜 Payment Method Currently Available UPI & Crypto! ❤️  
+For subscription & inquiries, contact:  
+🌟@cheetax1🌟
+
+Thank you for choosing our service! 💫''')
 
 
 
@@ -2323,7 +2486,7 @@ def generate_code(message):
                 existing_data = json.load(json_file)
             
             characters = string.ascii_uppercase + string.digits
-            pas = 'NIGGA-' + '2024' +'-' + ''.join(random.choices(characters, k=4))
+            pas = 'NoN-Chalant-' + '2025' +'-' + ''.join(random.choices(characters, k=4))
             current_time = datetime.now()
             expiration_time = current_time + timedelta(hours=h)
             plan = 'VIP Subscribed'
