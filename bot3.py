@@ -194,7 +194,7 @@ def main(message):
 			keyboard = types.InlineKeyboardMarkup()
 			contact_button = types.InlineKeyboardButton(text="ϟ Programmer - cheetax1", url="https://t.me/cheetax1")
 			keyboard.add(contact_button)
-			bot.send_message(chat_id=message.chat.id, text='''<b>ϟ Your Subscription has Expired • لاتستطيع استخدام البوت لانه انتهى اشتراكك </b>
+			bot.send_message(chat_id=message.chat.id, text='''<b>ϟ Your Subscription has Expired • </b>
 		''',reply_markup=keyboard)
 			with open('data.json', 'r') as file:
 				json_data = json.load(file)
@@ -609,7 +609,7 @@ def menu_callback(call):
                     bot.edit_message_text(chat_id=call.message.chat.id, 
                         message_id=call.message.message_id, 
                         text=f'''
-<b>- Please Wait Checking Your Cards 💫
+<b>- Please Wait Checking Your Cards 💫 in our [#special_Live_check_shopify] Gate
 - Gate -> {gate} 💫
 - Programmer -> @cheetax1 </b>''', 
                         reply_markup=mes)
@@ -777,7 +777,7 @@ def menu_callback(call):
                     bot.edit_message_text(chat_id=call.message.chat.id, 
                         message_id=call.message.message_id, 
                         text=f'''
-<b>- Please Wait Checking Your Cards 💫
+<b>- Please Wait Checking Your Cards 💫 in our [#Shopify_Donation] Gate
 - Gate -> {gate} 💫
 - Programmer -> @cheetax1 </b>''', 
                         reply_markup=mes)
@@ -962,7 +962,7 @@ def menu_callback(call):
                     bot.edit_message_text(chat_id=call.message.chat.id, 
                         message_id=call.message.message_id, 
                         text=f'''
-<b>- Please Wait Checking Your Cards 💫
+<b>- Please Wait Checking Your Cards 💫 in our [#High_amount_shopify] Gate
 - Gate -> {gate} 💫
 - Programmer -> @cheetax1 </b>''', 
                         reply_markup=mes)
@@ -1128,7 +1128,7 @@ def menu_callbactok(call):
                     bot.edit_message_text(chat_id=call.message.chat.id, 
                         message_id=call.message.message_id, 
                         text=f'''
-<b>- Please Wait Checking Your Cards 💫
+<b>- Please Wait Checking Your Cards 💫 in our [#Avs_Braintree] Gate
 - Gate -> {gate} 💫
 - Programmer -> @cheetax1 </b>''', 
                         reply_markup=mes)
@@ -1227,7 +1227,7 @@ def menu_callbactok(call):
         return  # إذا كان هناك فحص جاري، نخرج من الدالة ولا نبدأ فحص جديد
 
     def my_function():
-        gate = 'Braintree 4'
+        gate = 'Braintree Non-Avs'
         dd = 0
         live = 0
         cm = 0
@@ -1290,7 +1290,7 @@ def menu_callbactok(call):
                     bot.edit_message_text(chat_id=call.message.chat.id, 
                         message_id=call.message.message_id, 
                         text=f'''
-<b>- Please Wait Checking Your Cards 💫
+<b>- Please Wait Checking Your Cards 💫 in our [#NoN_Avs_Braintree] Gate
 - Gate -> {gate} 💫
 - Programmer -> @cheetax1 </b>''', 
                         reply_markup=mes)
@@ -1434,8 +1434,8 @@ def respond_to_vhk(message):
         last_time = command_usage[user_id]['last_time']
         time_diff = (current_time - last_time).seconds
         # تحقق مما إذا كان الوقت الفاصل أقل من 30 ثانية
-        if time_diff < 30:
-            bot.reply_to(message, f"<b>Try again after {30 - time_diff} seconds.</b>", parse_mode="HTML")
+        if time_diff < 3:
+            bot.reply_to(message, f"<b>Try again after {3 - time_diff} seconds.</b>", parse_mode="HTML")
             return
     
     # تحديث وقت آخر طلب
@@ -1561,8 +1561,8 @@ def respond_to_vhk(message):
         last_time = command_usage[user_id]['last_time']
         time_diff = (current_time - last_time).seconds
         # تحقق مما إذا كان الوقت الفاصل أقل من 30 ثانية
-        if time_diff < 30:
-            bot.reply_to(message, f"<b>Try again after {30 - time_diff} seconds.</b>", parse_mode="HTML")
+        if time_diff < 3:
+            bot.reply_to(message, f"<b>Try again after {3 - time_diff} seconds.</b>", parse_mode="HTML")
             return
     
     # تحديث وقت آخر طلب
@@ -1679,8 +1679,8 @@ def respond_to_vhk(message):
         last_time = command_usage[user_id]['last_time']
         time_diff = (current_time - last_time).seconds
         # تحقق مما إذا كان الوقت الفاصل أقل من 30 ثانية
-        if time_diff < 30:
-            bot.reply_to(message, f"<b>Try again after {30 - time_diff} seconds.</b>", parse_mode="HTML")
+        if time_diff < 3:
+            bot.reply_to(message, f"<b>Try again after {3 - time_diff} seconds.</b>", parse_mode="HTML")
             return
     
     # تحديث وقت آخر طلب
@@ -1733,7 +1733,7 @@ def respond_to_vhk(message):
 
         if 'CVV' in last or 'CCN' in last:
             bot.edit_message_text(text=cvc, chat_id=message.chat.id, message_id=ko)
-        elif "Funds" in last or 'Invalid postal' in last or 'Charge 0.50$ ✅' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last:
+        elif "charged" in last or 'Invalid postal' in last or 'Charge 0.50$ ✅' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last:
             bot.edit_message_text(text=ok, chat_id=message.chat.id, message_id=ko)
         else:
             bot.edit_message_text(text=dec, chat_id=message.chat.id, message_id=ko)
@@ -1798,8 +1798,8 @@ def respond_to_vhk(message):
         last_time = command_usage[user_id]['last_time']
         time_diff = (current_time - last_time).seconds
         # تحقق مما إذا كان الوقت الفاصل أقل من 30 ثانية
-        if time_diff < 30:
-            bot.reply_to(message, f"<b>Try again after {30 - time_diff} seconds.</b>", parse_mode="HTML")
+        if time_diff < 3:
+            bot.reply_to(message, f"<b>Try again after {3 - time_diff} seconds.</b>", parse_mode="HTML")
             return
     
     # تحديث وقت آخر طلب
@@ -1811,7 +1811,7 @@ def respond_to_vhk(message):
         ko = bot.reply_to(message, '- Please Wait Checking your Card...⌛').message_id
         start_time = time.time()
         try:
-            last = str(Tele4(ccx))
+            last = str(notauto(cc))
         except:
             last = 'Gateway Error ❌'
         end_time = time.time()
@@ -1964,8 +1964,8 @@ def respond_to_vhk(message):
     # تحقق من آخر وقت استخدم فيه المستخدم الأمر
     if user_id in last_command_usage:
         time_diff = (current_time - last_command_usage[user_id]).seconds
-        if time_diff < 30:  # إذا كانت المدة أقل من 30 ثانية
-            bot.reply_to(message, f"<b>Try again after {30 - time_diff} seconds.</b>", parse_mode="HTML")
+        if time_diff < 3:  # إذا كانت المدة أقل من 30 ثانية
+            bot.reply_to(message, f"<b>Try again after {3 - time_diff} seconds.</b>", parse_mode="HTML")
             return
 
     # تحديث وقت الاستخدام الأخير
@@ -1973,7 +1973,7 @@ def respond_to_vhk(message):
 
     if check_user_plan(user_id):
         cc = message.text.replace('.ba ', '').replace('/ba ', '')
-        gate = 'ʙʀᴀɪɴᴛʀᴇᴇ ᴄʜᴀʀɢᴇ 𝟶.𝟻𝟶'
+        gate = 'Braintree Auth (Avs)'
         ko = bot.reply_to(message, '- Please Wait Checking your Card...⌛').message_id
         start_time = time.time()
         try:
