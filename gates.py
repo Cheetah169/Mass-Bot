@@ -1,5 +1,6 @@
 import requests
 import re
+import user_agent
 import random
 import time
 import string
@@ -8,6 +9,8 @@ from bs4 import BeautifulSoup
 def notauto(ccx):
   proxy = get_proxy()
   print(proxy)
+  from user_agent import generate_user_agent
+  user = user_agent.generate_user_agent()
   import requests
   ccx = ccx.strip()
   n = ccx.split("|")[0]
@@ -23,7 +26,14 @@ def notauto(ccx):
     lines = '''aman44%40gmail.com%7C1744896112%7CSlBqEAxO6exEeroL3K05xOuEOOhoiC6hDDYXkRDtms9%7Cf98472d66230417354f2481b3e5571249ed6e66edabcfce6aadfab0b824637b5
 amay2u2i29992n44%40gmail.com%7C1744896630%7C5pDUB2jidT153JmrBDCzh5Eag0rUBJMtXfCsWVtlQBT%7C5fe8d807f092388898f545ce62f385202640f40be03d1b97882b802a91317a48
 ambdjdkwkkean44%40gmail.com%7C1744900543%7CTIaFuphDuekIpOJSG6rhG84oCBCaZwKtalNYSt77Hiq%7C137b18564710f0eea1533acf4672aef54652403daa1998bac8c6dbbcf45d656b
-ajejejyejwj2jman44%40gmail.com%7C1744900692%7Cf2t5MJjOiedj2k4PndwjIZ08OGYF0CxEeoCjD3usBBV%7C660103b8d9c387434c8e4a79893ff3947d2d086fbab44ab23e26560c59715bb4'''
+ajejejyejwj2jman44%40gmail.com%7C1744900692%7Cf2t5MJjOiedj2k4PndwjIZ08OGYF0CxEeoCjD3usBBV%7C660103b8d9c387434c8e4a79893ff3947d2d086fbab44ab23e26560c59715bb4
+a929292hman44%40gmail.com%7C1744950871%7CRZv14Vh6WYezkvDtV4hi9HFB6cICI9I3xAS8tDJOauB%7Cb76fe969f33b37e177b0b35e0de89c67ddac36ffb4f87771db8418a51fb5b946
+aman4ysyeu2844%40gmail.com%7C1744951014%7CXwqvW1OLGw1qtBJ06kWorxO3ShN7BLubLF4G9LPFBSC%7Cbdb676c5f62e1272b736561e38910b34a21d82ce20da6c4ee50916738d114a71
+aman4euiei34%40gmail.com%7C1744951143%7CU4PVbdD5Llaz9ML3pHdWmGfffXxBWjCxWrbA7lcJ2rI%7C867c61ce909f8ebfdd45c73c2aa76d6f6b31acf2d4524da80f1f3d56b264efae
+ayeu372727man44%40gmail.com%7C1744951290%7CNX6DeTzDD9f10coS9GefFu5eIZKQmkcKwBF0Di4m7rX%7C7364894de11652c6ceff526caf020db2b14aaf79e54235292449f840ab6ce7ae
+amty722an44%40gmail.com%7C1744951397%7C0Bftm7d3idI6dK8Tel4g8pdSFxuJ2p2dFpOFJYtO4JK%7C43f9a789e7611ecfab79f5f36aa61ecb6a2a34c03a2a26b5a1e321fcf071222e
+amany2y272u44%40gmail.com%7C1744951507%7CZP6sZ7Fqcd7f05QMBpQfy8SXFln70vAyDwKHotI64ys%7Ccf1ec290f4c8f2846b5f16b8b305c3584a35e4585a845d3ba387fca8fac0ff77
+ama55tt2ghjuiwn44%40gmail.com%7C1744951750%7C8bdaZ82y3OTvjJmRhQpnrC7YfUq5PP0pXF2ucXptHcM%7C09b094887f700df3a4579e447a1b232ee93888d7bdd1f92a8e483893965d52af'''
     lines = lines.strip().split('\n')
     random_line_number = random.randint(0, len(lines) - 1)
     big = lines[random_line_number]
@@ -65,7 +75,7 @@ ajejejyejwj2jman44%40gmail.com%7C1744900692%7Cf2t5MJjOiedj2k4PndwjIZ08OGYF0CxEeo
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
+    'user-agent': user,
 }
 
   response = requests.get('https://glasshousesupply.com/my-account/add-payment-method/', cookies=cookies, headers=headers, proxies=proxy)
@@ -92,7 +102,7 @@ ajejejyejwj2jman44%40gmail.com%7C1744900692%7Cf2t5MJjOiedj2k4PndwjIZ08OGYF0CxEeo
     'sec-fetch-dest': 'empty',
     'sec-fetch-mode': 'cors',
     'sec-fetch-site': 'cross-site',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
+    'user-agent': user,
 }
 
   json_data = {
@@ -155,7 +165,7 @@ ajejejyejwj2jman44%40gmail.com%7C1744900692%7Cf2t5MJjOiedj2k4PndwjIZ08OGYF0CxEeo
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
+    'user-agent': user,
 }
 
   data = {
